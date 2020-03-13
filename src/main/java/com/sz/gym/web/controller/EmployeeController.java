@@ -3,13 +3,14 @@ package com.sz.gym.web.controller;
 import com.sz.gym.model.Param.LoginParam;
 import com.sz.gym.model.Param.QueryParam;
 import com.sz.gym.model.VO.BaseVO;
-import com.sz.gym.model.VO.EmployeeShowVO;
+import com.sz.gym.model.VO.TableShowVO;
 import com.sz.gym.model.entity.Employee;
 import com.sz.gym.service.EmployeeService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -44,16 +45,18 @@ public class EmployeeController {
 
     @PutMapping("/employee")
     public BaseVO<String> updateEmployee(@RequestBody Employee employee){
+        employee.setUpdateTime(new Date());
         return employeeService.updateEmployee(employee);
     }
 
     @GetMapping("/employeeShow")
-    public BaseVO<EmployeeShowVO> getEmployeeShow(){
+    public BaseVO<TableShowVO> getEmployeeShow(){
         return employeeService.getEmployeeShow();
     }
 
     @PostMapping("/getEmployeeByQueryParam")
-    public BaseVO<EmployeeShowVO> getEmployeeByQueryParam(@RequestBody QueryParam queryParam){
+    public BaseVO<TableShowVO> getEmployeeByQueryParam(@RequestBody QueryParam queryParam){
+        log.debug("调试条件查询");
         log.info("===========================条件查询======================================");
         log.info("查询条件"+queryParam.toString());
         return employeeService.getEmployeeByQueryParam(queryParam);

@@ -25,6 +25,9 @@ import java.util.List;
 @Service
 public class ActivityServiceImpl implements ActivityService {
 
+    static final String SUCCESS="success";
+
+    static final String LOSER="loser";
 
     @Autowired
     public ActivityMapper activityMapper;
@@ -37,11 +40,11 @@ public class ActivityServiceImpl implements ActivityService {
         List<Activity> activities = selectActivityByName(activity);
         if(activities.size()!=0){
             log.info("活动已存在 不需要创建了");
-            return new BaseVO<Activity>("loser","活动已存在",activity);
+            return new BaseVO<Activity>(LOSER,"活动已存在",activity);
         }
         int insert = activityMapper.insert(activity);
         if (insert!=0) log.info("保存成功");
-        return new BaseVO<Activity>("success","保存成功",activity);
+        return new BaseVO<Activity>(SUCCESS,"保存成功",activity);
     }
 
     @Override
@@ -68,7 +71,7 @@ public class ActivityServiceImpl implements ActivityService {
             list.add(new DashboardActivityDTO(activity.getActivityName(),activity.getActivityStatus()));
         }
 
-        return new BaseVO<List<DashboardActivityDTO>>("success","查找成功",list);
+        return new BaseVO<List<DashboardActivityDTO>>(SUCCESS,"查找成功",list);
     }
 
 

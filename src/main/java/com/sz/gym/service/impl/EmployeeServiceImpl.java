@@ -4,13 +4,14 @@ import com.sz.gym.exception.NotFountException;
 import com.sz.gym.model.Param.LoginParam;
 import com.sz.gym.model.Param.QueryParam;
 import com.sz.gym.model.VO.BaseVO;
-import com.sz.gym.model.VO.EmployeeShowVO;
+import com.sz.gym.model.VO.TableShowVO;
 import com.sz.gym.model.entity.Employee;
 import com.sz.gym.model.entity.EmployeeExample;
 import com.sz.gym.service.EmployeeService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Date;
 import java.util.List;
@@ -24,6 +25,7 @@ import java.util.List;
  */
 @Service
 @Slf4j
+@Transactional
 public class EmployeeServiceImpl implements EmployeeService {
 
     @Autowired
@@ -38,7 +40,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         log.info("注册信息："+employee.toString());
         BaseVO<Employee> employeeBaseVO = new BaseVO<>();
         if(existEmployeeRegister(employee.getEmployeeName()).size()!=0){
-            return getBaseVO("loser","用户已存在",employee);
+            return getBaseVO(LOSER,"用户已存在",employee);
         }
         employee.setEmployeePost("");
         employee.setCreateTime(new Date());
@@ -46,7 +48,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         employee.setUpdateTime(new Date());
         int insert = employeeMapper.insert(employee);
         System.out.println(insert);
-        return getBaseVO("success","注册成功",employee);
+        return getBaseVO(SUCCESS,"注册成功",employee);
     }
 
     @Override
@@ -73,27 +75,27 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public BaseVO<List<Employee>> getAllEmployee() {
-        return new BaseVO<List<Employee>>("success","查询成功",employeeMapper.selectByExample(new EmployeeExample()));
+        return new BaseVO<List<Employee>>(SUCCESS,"查询成功",employeeMapper.selectByExample(new EmployeeExample()));
     }
 
     @Override
-    public BaseVO<EmployeeShowVO> getEmployeeShow() {
+    public BaseVO<TableShowVO> getEmployeeShow() {
         List<Employee> employees = employeeMapper.selectByExample(new EmployeeExample());
 
-        return new BaseVO<EmployeeShowVO>("success","查询成功",new EmployeeShowVO(employees,employees.size()));
+        return new BaseVO<TableShowVO>(SUCCESS,"查询成功",new TableShowVO(employees,employees.size()));
     }
 
     @Override
     public BaseVO<String> updateEmployee(Employee employee) {
         int i = employeeMapper.updateByPrimaryKey(employee);
         if(i==0){
-         return new BaseVO<String>("success","修改失败 具体问题请联系技术人员" ,"");
+         return new BaseVO<String>(LOSER,"修改失败 具体问题请联系技术人员" ,"");
         }
-        return new BaseVO<String>("success","修改成功" ,"");
+        return new BaseVO<String>(SUCCESS,"修改成功" ,"");
     }
 
     @Override
-    public BaseVO<EmployeeShowVO> getEmployeeByQueryParam(QueryParam queryParam) {
+    public BaseVO<TableShowVO> getEmployeeByQueryParam(QueryParam queryParam) {
         EmployeeExample employeeExample = new EmployeeExample();
         employeeExample.createCriteria().andEmployeeAddressLike("%"+queryParam.getEmployeeAddress()+"%")
                 .andEmployeeNameLike("%"+queryParam.getEmployeeName()+"%");
@@ -102,7 +104,7 @@ public class EmployeeServiceImpl implements EmployeeService {
              employees) {
             log.info(employee.toString());
         }
-        return new BaseVO<EmployeeShowVO>("success","成功",new EmployeeShowVO(employees,employees.size()));
+        return new BaseVO<TableShowVO>(SUCCESS,"成功",new TableShowVO(employees,employees.size()));
     }
 
     @Override
@@ -113,15 +115,15 @@ public class EmployeeServiceImpl implements EmployeeService {
                 employeeMapper.deleteByPrimaryKey(employee.getEmployeeId());
             }
         }catch (Exception e){
-            return new BaseVO<List<Employee>>("lower","删除失败 联系系统管理员",employees);
+            return new BaseVO<List<Employee>>(LOSER,"删除失败 联系系统管理员",employees);
         }
-        return new BaseVO<List<Employee>>("success","删除成功",employees);
+        return new BaseVO<List<Employee>>(SUCCESS,"删除成功",employees);
     }
 
     @Override
     public BaseVO<Employee> deleteEmployees(Employee employees) {
         int i = employeeMapper.deleteByPrimaryKey(employees.getEmployeeId());
-        return new BaseVO<Employee>("success","删除成功",employees);
+        return new BaseVO<Employee>(SUCCESS,"删除成功",employees);
     }
 
     //判断用户是否存在

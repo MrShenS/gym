@@ -22,6 +22,10 @@ import java.util.List;
 @Service
 public class DashboardServiceImpl implements DashboardService {
 
+    static final String SUCCESS="success";
+
+    static final String LOSER="loser";
+
     @Autowired
     public EmployeeMapper employeeMapper;
     @Autowired
@@ -35,7 +39,7 @@ public class DashboardServiceImpl implements DashboardService {
         List<Facilities> facilities = facilitiesMapper.selectByExample(new FacilitiesExample());
         List<Employee> employees = employeeMapper.selectByExample(new EmployeeExample());
         HeaderNumberDTO headerNumberDTO = new HeaderNumberDTO(employees.size(), facilities.size(), customers.size());
-        BaseVO<HeaderNumberDTO> headerNumberDTOBaseVO = new BaseVO<>("success", "查询成功", headerNumberDTO);
+        BaseVO<HeaderNumberDTO> headerNumberDTOBaseVO = new BaseVO<>(SUCCESS, "查询成功", headerNumberDTO);
         return headerNumberDTOBaseVO;
     }
 }

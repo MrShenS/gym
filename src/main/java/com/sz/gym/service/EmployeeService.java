@@ -3,7 +3,7 @@ package com.sz.gym.service;
 import com.sz.gym.model.Param.LoginParam;
 import com.sz.gym.model.Param.QueryParam;
 import com.sz.gym.model.VO.BaseVO;
-import com.sz.gym.model.VO.EmployeeShowVO;
+import com.sz.gym.model.VO.TableShowVO;
 import com.sz.gym.model.entity.Employee;
 import org.springframework.stereotype.Service;
 
@@ -33,11 +33,11 @@ public interface EmployeeService {
 
     public BaseVO<List<Employee>> getAllEmployee();
 
-    public BaseVO<EmployeeShowVO> getEmployeeShow();
+    public BaseVO<TableShowVO> getEmployeeShow();
 
     BaseVO<String> updateEmployee(Employee employee);
 
-    BaseVO<EmployeeShowVO> getEmployeeByQueryParam(QueryParam queryParam);
+    BaseVO<TableShowVO> getEmployeeByQueryParam(QueryParam queryParam);
 
     BaseVO<List<Employee>> deleteAllEmployees(List<Employee> employees);
 
