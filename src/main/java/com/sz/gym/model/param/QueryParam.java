@@ -1,4 +1,4 @@
-package com.sz.gym.model.Param;
+package com.sz.gym.model.param;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

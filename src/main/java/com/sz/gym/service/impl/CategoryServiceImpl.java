@@ -1,8 +1,8 @@
 package com.sz.gym.service.impl;
 
 import com.sz.gym.dao.CategoryMapper;
-import com.sz.gym.model.VO.BaseVO;
-import com.sz.gym.model.VO.TableShowVO;
+import com.sz.gym.model.vo.BaseVO;
+import com.sz.gym.model.vo.TableShowVO;
 import com.sz.gym.model.entity.Category;
 import com.sz.gym.model.entity.CategoryExample;
 import com.sz.gym.service.CategoryService;
@@ -104,10 +104,22 @@ public class CategoryServiceImpl implements CategoryService {
         return  new BaseVO<TableShowVO<Category>>(SUCCESS,"查询成功",listTableShowVO);
     }
 
+    @Override
+    public BaseVO<List<Category>> getCategoryByCategory(String categoryType) {
+        CategoryExample categoryExample = new CategoryExample();
+        categoryExample.createCriteria().andCategoryTypeEqualTo(categoryType);
+        return new BaseVO<List<Category>>(SUCCESS,"成功",categoryMapper.selectByExample(categoryExample));
+    }
+
     //判断类别是否存在
     public boolean existCategtoy(Category category){
         CategoryExample categoryExample = new CategoryExample();
-        categoryExample.createCriteria().andCategoryIdEqualTo(category.getCategoryId());
+        if(category.getCategoryId()!=null){
+            categoryExample.createCriteria().andCategoryIdEqualTo(category.getCategoryId());
+        }else {
+            categoryExample.createCriteria().andCategoryNameEqualTo(category.getCategoryName());
+        }
+
         List<Category> categories = categoryMapper.selectByExample(categoryExample);
         if(categories.size()==0){
 //            throw new NotFountException("未找到")

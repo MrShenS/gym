@@ -1,11 +1,8 @@
 package com.sz.gym.web.controller;
 
-import com.sz.gym.model.VO.BaseVO;
-import com.sz.gym.model.VO.TableShowVO;
-import com.sz.gym.model.dto.DashboardActivityDTO;
-import com.sz.gym.model.entity.Activity;
+import com.sz.gym.model.vo.BaseVO;
+import com.sz.gym.model.vo.TableShowVO;
 import com.sz.gym.model.entity.Category;
-import com.sz.gym.service.ActivityService;
 import com.sz.gym.service.CategoryService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,6 +33,13 @@ public class CategoryController {
     @GetMapping
     public BaseVO<TableShowVO<Category>> getCategory(){
         return categoryService.selectCategory();
+    }
+
+
+    @GetMapping("/CategoryType")
+    public BaseVO<List<Category>> getCategory(@RequestParam("categoryType") String categoryType ){
+        log.info("打印请求参数："+categoryType );
+        return categoryService.getCategoryByCategory(categoryType);
     }
 
     @PutMapping()

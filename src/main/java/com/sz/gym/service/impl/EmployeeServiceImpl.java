@@ -1,15 +1,17 @@
 package com.sz.gym.service.impl;
 import com.sz.gym.dao.EmployeeMapper;
 import com.sz.gym.exception.NotFountException;
-import com.sz.gym.model.Param.LoginParam;
-import com.sz.gym.model.Param.QueryParam;
-import com.sz.gym.model.VO.BaseVO;
-import com.sz.gym.model.VO.TableShowVO;
+import com.sz.gym.model.param.LoginParam;
+import com.sz.gym.model.param.QueryParam;
+import com.sz.gym.model.vo.BaseVO;
+import com.sz.gym.model.vo.TableShowVO;
 import com.sz.gym.model.entity.Employee;
 import com.sz.gym.model.entity.EmployeeExample;
 import com.sz.gym.service.EmployeeService;
+import com.sz.gym.utils.RedisUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -30,6 +32,9 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Autowired
     public EmployeeMapper employeeMapper;
+
+    @Autowired
+    public RedisUtil redisUtil;
 
     static final String SUCCESS="success";
 
@@ -73,6 +78,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         return new BaseVO<LoginParam>(SUCCESS,"登录成功",LoginParam);
     }
 
+    @Transactional
     @Override
     public BaseVO<List<Employee>> getAllEmployee() {
         return new BaseVO<List<Employee>>(SUCCESS,"查询成功",employeeMapper.selectByExample(new EmployeeExample()));
@@ -94,12 +100,15 @@ public class EmployeeServiceImpl implements EmployeeService {
         return new BaseVO<String>(SUCCESS,"修改成功" ,"");
     }
 
+    @Transactional
+    @Cacheable(value = "redisCache", key = "'redis_user_'+#queryParam")
     @Override
     public BaseVO<TableShowVO> getEmployeeByQueryParam(QueryParam queryParam) {
         EmployeeExample employeeExample = new EmployeeExample();
         employeeExample.createCriteria().andEmployeeAddressLike("%"+queryParam.getEmployeeAddress()+"%")
                 .andEmployeeNameLike("%"+queryParam.getEmployeeName()+"%");
         List<Employee> employees = employeeMapper.selectByExample(employeeExample);
+
         for (Employee employee :
              employees) {
             log.info(employee.toString());

@@ -1,11 +1,8 @@
 package com.sz.gym.web.controller;
 
-import com.sz.gym.model.Param.LoginParam;
-import com.sz.gym.model.VO.BaseVO;
+import com.sz.gym.model.vo.BaseVO;
 import com.sz.gym.model.dto.HeaderNumberDTO;
-import com.sz.gym.model.entity.Employee;
 import com.sz.gym.service.DashboardService;
-import com.sz.gym.service.EmployeeService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

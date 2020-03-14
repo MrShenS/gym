@@ -1,11 +1,12 @@
 package com.sz.gym.web.controller;
 
-import com.sz.gym.model.Param.LoginParam;
-import com.sz.gym.model.Param.QueryParam;
-import com.sz.gym.model.VO.BaseVO;
-import com.sz.gym.model.VO.TableShowVO;
+import com.sz.gym.model.param.LoginParam;
+import com.sz.gym.model.param.QueryParam;
+import com.sz.gym.model.vo.BaseVO;
+import com.sz.gym.model.vo.TableShowVO;
 import com.sz.gym.model.entity.Employee;
 import com.sz.gym.service.EmployeeService;
+import com.sz.gym.utils.RedisUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -27,6 +28,9 @@ public class EmployeeController {
 
     @Autowired
     public EmployeeService employeeService;
+
+    @Autowired
+    public RedisUtil redisUtil;
 
     @PostMapping("/register")
     public BaseVO<Employee> register(@RequestBody Employee employee){
@@ -59,6 +63,7 @@ public class EmployeeController {
         log.debug("调试条件查询");
         log.info("===========================条件查询======================================");
         log.info("查询条件"+queryParam.toString());
+        log.debug("查看一下redis中的值："+redisUtil.get("redisCache::redis_user_QueryParam(employeeName=, employeeAddress=)"));
         return employeeService.getEmployeeByQueryParam(queryParam);
     }
 

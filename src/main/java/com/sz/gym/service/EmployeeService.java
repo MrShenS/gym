@@ -1,9 +1,9 @@
 package com.sz.gym.service;
 
-import com.sz.gym.model.Param.LoginParam;
-import com.sz.gym.model.Param.QueryParam;
-import com.sz.gym.model.VO.BaseVO;
-import com.sz.gym.model.VO.TableShowVO;
+import com.sz.gym.model.param.LoginParam;
+import com.sz.gym.model.param.QueryParam;
+import com.sz.gym.model.vo.BaseVO;
+import com.sz.gym.model.vo.TableShowVO;
 import com.sz.gym.model.entity.Employee;
 import org.springframework.stereotype.Service;
 

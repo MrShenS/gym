@@ -3,7 +3,7 @@ package com.sz.gym.service.impl;
 import com.sz.gym.dao.CustomerMapper;
 import com.sz.gym.dao.EmployeeMapper;
 import com.sz.gym.dao.FacilitiesMapper;
-import com.sz.gym.model.VO.BaseVO;
+import com.sz.gym.model.vo.BaseVO;
 import com.sz.gym.model.dto.HeaderNumberDTO;
 import com.sz.gym.model.entity.*;
 import com.sz.gym.service.DashboardService;

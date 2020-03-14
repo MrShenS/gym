@@ -37,15 +37,15 @@ public class controllerAspect {
         HttpServletRequest request = ((ServletRequestAttributes) requestAttributes).getRequest();
         // 记录下请求内容
         log.info("访问的URL : " + request.getRequestURL().toString());
-        log.debug("请求方法 : " + request.getMethod());
-        log.debug("请求IP地址 : " + request.getRemoteAddr());
-        log.debug("请求参数 : " + Arrays.toString(joinPoint.getArgs()));
+        log.info("请求方法 : " + request.getMethod());
+        log.info("请求IP地址 : " + request.getRemoteAddr());
+        log.info("请求参数 : " + Arrays.toString(joinPoint.getArgs()));
 
         //下面这个getSignature().getDeclaringTypeName()是获取包+类名的   然后后面的joinPoint.getSignature.getName()获取了方法名
-        log.debug("################CLASS_METHOD : " + joinPoint.getSignature().getDeclaringTypeName() + "." + joinPoint.getSignature().getName());
-        log.debug("################TARGET: " + joinPoint.getTarget());//返回的是需要加强的目标类的对象
+        log.info("################CLASS_METHOD : " + joinPoint.getSignature().getDeclaringTypeName() + "." + joinPoint.getSignature().getName());
+        log.info("################TARGET: " + joinPoint.getTarget());//返回的是需要加强的目标类的对象
         log.warn("======================请妥善使用SpringAOP功能================");
-        log.debug("################THIS: " + joinPoint.getThis());//返回的是经过加强后的代理类的对象
+        log.info("################THIS: " + joinPoint.getThis());//返回的是经过加强后的代理类的对象
     }
 
 }

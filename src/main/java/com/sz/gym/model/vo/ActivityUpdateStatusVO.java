@@ -1,6 +1,5 @@
-package com.sz.gym.model.VO;
+package com.sz.gym.model.vo;
 
-import com.sz.gym.model.entity.Employee;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -8,16 +7,17 @@ import lombok.NoArgsConstructor;
 import java.util.List;
 
 /**
- * @ClassNameemployeeShowVO
+ * @ClassNameActivityUpdateStatusVO
  * @Description TODO
  * @Author zhen.zhen
- * @Date 2020/3/1210:38
+ * @Date 2020/3/1418:57
  * @Version 1.0
  */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class TableShowVO<T> {
-    public List<T> list;
-    public int num;
+public class ActivityUpdateStatusVO<T> {
+    private List<T> doings;
+    private List<T> todDoing;
+    private List<T> done;
 }

@@ -1,9 +1,8 @@
-package com.sz.gym.model.VO;
+package com.sz.gym.model.vo;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.ToString;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -21,4 +20,5 @@ public class BaseVO<T> {
     public String status;
     public String message;
     public T obj;
+
 }
