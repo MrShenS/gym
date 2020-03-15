@@ -1,6 +1,7 @@
 package com.sz.gym.service.impl;
 
 import com.sz.gym.dao.FinanceMapper;
+import com.sz.gym.exception.FinanceException;
 import com.sz.gym.model.vo.BaseVO;
 import com.sz.gym.model.entity.Finance;
 import com.sz.gym.model.enums.ConstantEnum;
@@ -21,7 +22,6 @@ import java.util.Date;
  */
 @Service
 @Slf4j
-@Transactional
 public class FinanceServiceImpl implements FinanceService {
 
 
@@ -39,7 +39,7 @@ public class FinanceServiceImpl implements FinanceService {
         }catch (Exception e){
             log.error("增加财政记录报错");
             e.printStackTrace();
-            return new BaseVO<Finance>(ConstantEnum.success.toString(),"失败请联系管理员",finance);
+            throw new FinanceException("财务流水表出现错误");
         }
         log.info("添加财政表成功");
         return new BaseVO<Finance>(ConstantEnum.success.toString(),"添加成功",finance);

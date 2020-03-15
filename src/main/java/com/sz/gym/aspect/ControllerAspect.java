@@ -24,7 +24,7 @@ import java.util.Arrays;
 @Aspect
 @Component
 @Slf4j
-public class controllerAspect {
+public class ControllerAspect {
 
     @Pointcut("execution(*  *..*.*.controller..*.*(..))")
     public void controller() {
