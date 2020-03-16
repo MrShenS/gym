@@ -105,8 +105,8 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public BaseVO<TableShowVO> getEmployeeByQueryParam(QueryParam queryParam) {
         EmployeeExample employeeExample = new EmployeeExample();
-        employeeExample.createCriteria().andEmployeeAddressLike("%"+queryParam.getEmployeeAddress()+"%")
-                .andEmployeeNameLike("%"+queryParam.getEmployeeName()+"%");
+        employeeExample.createCriteria().andEmployeeAddressLike("%"+queryParam.getAddress()+"%")
+                .andEmployeeNameLike("%"+queryParam.getName()+"%");
         List<Employee> employees = employeeMapper.selectByExample(employeeExample);
 
         for (Employee employee :

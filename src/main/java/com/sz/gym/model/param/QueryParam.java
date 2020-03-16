@@ -15,6 +15,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class QueryParam {
-    public String employeeName;
-    public String employeeAddress;
+    public String Name;
+    public String Address;
 }

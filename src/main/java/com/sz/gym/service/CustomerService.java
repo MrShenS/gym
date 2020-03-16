@@ -1,6 +1,8 @@
 package com.sz.gym.service;
 
+import com.sz.gym.model.dto.CustomerWithProductDTO;
 import com.sz.gym.model.entity.Customer;
+import com.sz.gym.model.param.CustomerParam;
 import com.sz.gym.model.vo.BaseVO;
 import com.sz.gym.model.vo.TableShowVO;
 import lombok.extern.slf4j.Slf4j;
@@ -19,4 +21,12 @@ public interface CustomerService {
 
     BaseVO<Customer> deleteCustomer(Customer customer);
 
+    BaseVO<Customer> saveCustomer(CustomerParam customerParam);
+
+
+    BaseVO<CustomerWithProductDTO> getCustomerAllDetail(String phone);
+
+    BaseVO<Customer> updateCustomer(Customer customer);
+
+    BaseVO<TableShowVO<Customer>> getCustomerByQueryParam(String name, String address);
 }
