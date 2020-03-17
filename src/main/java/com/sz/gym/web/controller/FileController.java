@@ -1,17 +1,22 @@
 package com.sz.gym.web.controller;
 
+import com.sz.gym.model.enums.ConstantEnum;
+import com.sz.gym.model.vo.BaseVO;
+import com.sz.gym.service.FileService;
+import com.sz.gym.utils.UuidUtils;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.IOUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.io.File;
-import java.io.IOException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.*;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.UUID;
 
 /**
  * @ClassNamefileController
@@ -22,42 +27,39 @@ import java.io.IOException;
  */
 @RestController
 @RequestMapping("/File")
+@CrossOrigin
 @Slf4j
 public class FileController {
 
 
 
-    @Value("${filePath}")
+    @Autowired
+    public FileService fileService;
+
+//    @Value("${filePath}")
     String path;
 
     /**
      * 实现文件上传
      * */
-    @RequestMapping("/fileUpload")
-    public String fileUpload(@RequestParam("fileName") MultipartFile file){
-        if(file.isEmpty()){
-            return "false";
-        }
-        String fileName = file.getOriginalFilename();
-        int size = (int) file.getSize();
-        System.out.println(fileName + "-->" + size);
-
-
-        File dest = new File(path + "/" + fileName);
-        if(!dest.getParentFile().exists()){ //判断文件父目录是否存在
-            dest.getParentFile().mkdir();
-        }
+    @PostMapping("/fileUpload")
+    public BaseVO<String> fileUpload(@RequestParam("multipartfiles") MultipartFile file) throws IOException {
+        BaseVO<String> uploadMassage=null;
         try {
-            file.transferTo(dest); //保存文件
-            return "true";
-        } catch (IllegalStateException e) {
-            // TODO Auto-generated catch block
+            uploadMassage= fileService.upload(file);
+        }catch (Exception e){
             e.printStackTrace();
-            return "false";
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-            return "false";
+            return new BaseVO<String>(ConstantEnum.lower.toString(),e.getMessage(),"文件上传失败");
         }
+       return uploadMassage;
+
     }
+
+    @GetMapping("/getValue")
+    public String getValue(){
+        return path;
+    }
+
+
 }
+

@@ -21,10 +21,5 @@ import java.util.List;
 public class test {
 
 
-    @Value("${filePath}")
-    String path;
 
-    public static void main(String[] args) {
-        System.out.println(new test().path);
-    }
 }
