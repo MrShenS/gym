@@ -43,6 +43,7 @@
 		<table  tableName="facilities" domainObjectName="Facilities"></table>
 		<table  tableName="product" domainObjectName="Product"></table>
         <table  tableName="finance" domainObjectName="Finance"></table>
+        <table  tableName="FileInfo" domainObjectName="FileInfo"></table>
 		<table  tableName="product_category" domainObjectName="ProductCategory"></table>
 		<table  tableName="product_customer" domainObjectName="ProductCustomer"></table>
   </context>

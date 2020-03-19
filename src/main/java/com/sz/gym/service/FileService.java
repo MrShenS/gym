@@ -1,8 +1,11 @@
 package com.sz.gym.service;
 
+import com.sz.gym.model.entity.FileInfo;
 import com.sz.gym.model.vo.BaseVO;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
+
+import java.util.List;
 
 /**
  * @ClassNameFileService
@@ -16,4 +19,7 @@ public interface FileService {
 
 
     BaseVO<String> upload(MultipartFile file);
+
+    BaseVO<List<FileInfo>> getAllFileName();
+
 }

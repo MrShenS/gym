@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @CrossOrigin
 @Slf4j
-@RequestMapping("/Facilities")
+@RequestMapping("/api/Facilities")
 public class FacilitiesController {
 
     @Autowired

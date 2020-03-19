@@ -26,8 +26,15 @@ public class ScheduledConfig {
 
     @Autowired
     public CustomerMapper customerMapper;
+/**
+ * @Author zhen.shen
+ * @Description //TODO 定时修改会员时间
+ * @Date 12:32 2020/3/19
+ * @Param
+ * @return
+ **/
 
-    @Scheduled(cron = "* * 3 * * *")
+    @Scheduled(cron = "* 4 * * * *")
     @Transactional
     public void checkCustomer(){
         log.info("=====>>>>会员时间减一  {}",System.currentTimeMillis());

@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.*;
  * @Version 1.0
  */
 @RestController
-@RequestMapping("/Customer")
+@RequestMapping("/api/Customer")
 @CrossOrigin
 @Slf4j
 public class CustomerController {

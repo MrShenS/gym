@@ -20,7 +20,7 @@ import java.util.List;
 @RestController
 @CrossOrigin
 @Slf4j
-@RequestMapping("/Category")
+@RequestMapping("/api/Category")
 public class CategoryController {
 
     @Autowired

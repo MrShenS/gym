@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @CrossOrigin
 @Slf4j
-@RequestMapping("/Product")
+@RequestMapping("/api/Product")
 public class ProductController {
 
     @Autowired

@@ -5675,3 +5675,297 @@ Consider defining a bean of type 'com.sz.gym.service.FileService' in your config
 2020-03-17 19:05:49.464 [restartedMain] INFO  com.sz.gym.listener.StartedListener - welcome to 世界五百强健身房管理系统  颤抖凡人
 2020-03-17 19:05:49.464 [restartedMain] INFO  com.sz.gym.listener.StartedListener - GYM World started at         http://192.168.0.119:8099
 2020-03-17 19:05:49.464 [restartedMain] INFO  com.sz.gym.listener.StartedListener - 启动时间为：Tue Mar 17 19:05:49 CST 2020
+2020-03-17 21:54:28.049 [http-nio-8099-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-17 21:54:28.082 [http-nio-8099-exec-1] INFO  com.sz.gym.aspect.ControllerAspect - 访问的URL : http://localhost:8099/employeeShow
+2020-03-17 21:54:28.082 [http-nio-8099-exec-1] INFO  com.sz.gym.aspect.ControllerAspect - 请求方法 : GET
+2020-03-17 21:54:28.082 [http-nio-8099-exec-1] INFO  com.sz.gym.aspect.ControllerAspect - 请求IP地址 : 0:0:0:0:0:0:0:1
+2020-03-17 21:54:28.083 [http-nio-8099-exec-1] INFO  com.sz.gym.aspect.ControllerAspect - 请求参数 : []
+2020-03-17 21:54:28.083 [http-nio-8099-exec-1] INFO  com.sz.gym.aspect.ControllerAspect - ################CLASS_METHOD : com.sz.gym.web.controller.EmployeeController.getEmployeeShow
+2020-03-17 21:54:28.083 [http-nio-8099-exec-1] INFO  com.sz.gym.aspect.ControllerAspect - ################TARGET: com.sz.gym.web.controller.EmployeeController@93003f6
+2020-03-17 21:54:28.083 [http-nio-8099-exec-1] WARN  com.sz.gym.aspect.ControllerAspect - ======================请妥善使用SpringAOP功能================
+2020-03-17 21:54:28.083 [http-nio-8099-exec-1] INFO  com.sz.gym.aspect.ControllerAspect - ################THIS: com.sz.gym.web.controller.EmployeeController@93003f6
+2020-03-17 21:54:28.140 [http-nio-8099-exec-1] DEBUG com.sz.gym.dao.EmployeeMapper.selectByExample - ==>  Preparing: select employee_id, employee_name, employee_password, employee_post, CREATE_TIME, update_time, salary, employee_relname, employee_phone, employee_email, employee_address from employee 
+2020-03-17 21:54:28.141 [http-nio-8099-exec-1] DEBUG com.sz.gym.dao.EmployeeMapper.selectByExample - ==> Parameters: 
+2020-03-17 21:54:28.143 [http-nio-8099-exec-1] DEBUG com.sz.gym.dao.EmployeeMapper.selectByExample - <==      Total: 3
+2020-03-17 21:54:29.190 [http-nio-8099-exec-2] INFO  com.sz.gym.aspect.ControllerAspect - 访问的URL : http://localhost:8099/Customer
+2020-03-17 21:54:29.190 [http-nio-8099-exec-2] INFO  com.sz.gym.aspect.ControllerAspect - 请求方法 : GET
+2020-03-17 21:54:29.190 [http-nio-8099-exec-2] INFO  com.sz.gym.aspect.ControllerAspect - 请求IP地址 : 0:0:0:0:0:0:0:1
+2020-03-17 21:54:29.190 [http-nio-8099-exec-2] INFO  com.sz.gym.aspect.ControllerAspect - 请求参数 : []
+2020-03-17 21:54:29.190 [http-nio-8099-exec-2] INFO  com.sz.gym.aspect.ControllerAspect - ################CLASS_METHOD : com.sz.gym.web.controller.CustomerController.getCustomerAll
+2020-03-17 21:54:29.191 [http-nio-8099-exec-2] INFO  com.sz.gym.aspect.ControllerAspect - ################TARGET: com.sz.gym.web.controller.CustomerController@3eecd57
+2020-03-17 21:54:29.191 [http-nio-8099-exec-2] WARN  com.sz.gym.aspect.ControllerAspect - ======================请妥善使用SpringAOP功能================
+2020-03-17 21:54:29.191 [http-nio-8099-exec-2] INFO  com.sz.gym.aspect.ControllerAspect - ################THIS: com.sz.gym.web.controller.CustomerController@3eecd57
+2020-03-17 21:54:29.196 [http-nio-8099-exec-2] DEBUG com.sz.gym.dao.CustomerMapper.selectByExample - ==>  Preparing: select customer_id, customer_name, customer_phone, customer_type, customer_residueTime, create_time, update_time, birthday, customer_address, customer_description from customer 
+2020-03-17 21:54:29.196 [http-nio-8099-exec-2] DEBUG com.sz.gym.dao.CustomerMapper.selectByExample - ==> Parameters: 
+2020-03-17 21:54:29.198 [http-nio-8099-exec-2] DEBUG com.sz.gym.dao.CustomerMapper.selectByExample - <==      Total: 4
+2020-03-17 21:54:29.802 [http-nio-8099-exec-3] INFO  com.sz.gym.aspect.ControllerAspect - 访问的URL : http://localhost:8099/Category
+2020-03-17 21:54:29.802 [http-nio-8099-exec-3] INFO  com.sz.gym.aspect.ControllerAspect - 请求方法 : GET
+2020-03-17 21:54:29.802 [http-nio-8099-exec-3] INFO  com.sz.gym.aspect.ControllerAspect - 请求IP地址 : 0:0:0:0:0:0:0:1
+2020-03-17 21:54:29.802 [http-nio-8099-exec-3] INFO  com.sz.gym.aspect.ControllerAspect - 请求参数 : []
+2020-03-17 21:54:29.802 [http-nio-8099-exec-3] INFO  com.sz.gym.aspect.ControllerAspect - ################CLASS_METHOD : com.sz.gym.web.controller.CategoryController.getCategory
+2020-03-17 21:54:29.802 [http-nio-8099-exec-3] INFO  com.sz.gym.aspect.ControllerAspect - ################TARGET: com.sz.gym.web.controller.CategoryController@78011c9f
+2020-03-17 21:54:29.802 [http-nio-8099-exec-3] WARN  com.sz.gym.aspect.ControllerAspect - ======================请妥善使用SpringAOP功能================
+2020-03-17 21:54:29.802 [http-nio-8099-exec-3] INFO  com.sz.gym.aspect.ControllerAspect - ################THIS: com.sz.gym.web.controller.CategoryController@78011c9f
+2020-03-17 21:54:29.806 [http-nio-8099-exec-3] DEBUG com.sz.gym.dao.CategoryMapper.selectByExample - ==>  Preparing: select category_id, category_name, category_type, create_time, update_time from category 
+2020-03-17 21:54:29.806 [http-nio-8099-exec-3] DEBUG com.sz.gym.dao.CategoryMapper.selectByExample - ==> Parameters: 
+2020-03-17 21:54:29.807 [http-nio-8099-exec-3] DEBUG com.sz.gym.dao.CategoryMapper.selectByExample - <==      Total: 5
+2020-03-17 21:54:29.808 [http-nio-8099-exec-3] DEBUG com.sz.gym.service.impl.CategoryServiceImpl - 共查询出类目种类5个
+2020-03-17 21:54:30.569 [http-nio-8099-exec-4] INFO  com.sz.gym.aspect.ControllerAspect - 访问的URL : http://localhost:8099/Facilities
+2020-03-17 21:54:30.569 [http-nio-8099-exec-4] INFO  com.sz.gym.aspect.ControllerAspect - 请求方法 : GET
+2020-03-17 21:54:30.569 [http-nio-8099-exec-4] INFO  com.sz.gym.aspect.ControllerAspect - 请求IP地址 : 0:0:0:0:0:0:0:1
+2020-03-17 21:54:30.569 [http-nio-8099-exec-4] INFO  com.sz.gym.aspect.ControllerAspect - 请求参数 : []
+2020-03-17 21:54:30.569 [http-nio-8099-exec-4] INFO  com.sz.gym.aspect.ControllerAspect - ################CLASS_METHOD : com.sz.gym.web.controller.FacilitiesController.getFacilities
+2020-03-17 21:54:30.569 [http-nio-8099-exec-4] INFO  com.sz.gym.aspect.ControllerAspect - ################TARGET: com.sz.gym.web.controller.FacilitiesController@214565d9
+2020-03-17 21:54:30.569 [http-nio-8099-exec-4] WARN  com.sz.gym.aspect.ControllerAspect - ======================请妥善使用SpringAOP功能================
+2020-03-17 21:54:30.569 [http-nio-8099-exec-4] INFO  com.sz.gym.aspect.ControllerAspect - ################THIS: com.sz.gym.web.controller.FacilitiesController@214565d9
+2020-03-17 21:54:30.570 [http-nio-8099-exec-5] INFO  com.sz.gym.aspect.ControllerAspect - 访问的URL : http://localhost:8099/Category/CategoryType
+2020-03-17 21:54:30.570 [http-nio-8099-exec-5] INFO  com.sz.gym.aspect.ControllerAspect - 请求方法 : GET
+2020-03-17 21:54:30.570 [http-nio-8099-exec-5] INFO  com.sz.gym.aspect.ControllerAspect - 请求IP地址 : 0:0:0:0:0:0:0:1
+2020-03-17 21:54:30.570 [http-nio-8099-exec-5] INFO  com.sz.gym.aspect.ControllerAspect - 请求参数 : [facilities]
+2020-03-17 21:54:30.570 [http-nio-8099-exec-5] INFO  com.sz.gym.aspect.ControllerAspect - ################CLASS_METHOD : com.sz.gym.web.controller.CategoryController.getCategory
+2020-03-17 21:54:30.570 [http-nio-8099-exec-5] INFO  com.sz.gym.aspect.ControllerAspect - ################TARGET: com.sz.gym.web.controller.CategoryController@78011c9f
+2020-03-17 21:54:30.570 [http-nio-8099-exec-5] WARN  com.sz.gym.aspect.ControllerAspect - ======================请妥善使用SpringAOP功能================
+2020-03-17 21:54:30.571 [http-nio-8099-exec-5] INFO  com.sz.gym.aspect.ControllerAspect - ################THIS: com.sz.gym.web.controller.CategoryController@78011c9f
+2020-03-17 21:54:30.571 [http-nio-8099-exec-5] INFO  com.sz.gym.web.controller.CategoryController - 打印请求参数：facilities
+2020-03-17 21:54:30.572 [http-nio-8099-exec-5] DEBUG com.sz.gym.dao.CategoryMapper.selectByExample - ==>  Preparing: select category_id, category_name, category_type, create_time, update_time from category WHERE ( category_type = ? ) 
+2020-03-17 21:54:30.573 [http-nio-8099-exec-5] DEBUG com.sz.gym.dao.CategoryMapper.selectByExample - ==> Parameters: facilities(String)
+2020-03-17 21:54:30.574 [http-nio-8099-exec-5] DEBUG com.sz.gym.dao.CategoryMapper.selectByExample - <==      Total: 3
+2020-03-17 21:54:30.574 [http-nio-8099-exec-4] DEBUG com.sz.gym.dao.FacilitiesMapper.selectByExample - ==>  Preparing: select id, facilities_name, number, create_time, update_time, discription, facilities_Status, price, facilities_type from facilities 
+2020-03-17 21:54:30.574 [http-nio-8099-exec-4] DEBUG com.sz.gym.dao.FacilitiesMapper.selectByExample - ==> Parameters: 
+2020-03-17 21:54:30.576 [http-nio-8099-exec-4] DEBUG com.sz.gym.dao.FacilitiesMapper.selectByExample - <==      Total: 9
+2020-03-17 21:54:31.198 [http-nio-8099-exec-7] INFO  com.sz.gym.aspect.ControllerAspect - 访问的URL : http://localhost:8099/Category/CategoryType
+2020-03-17 21:54:31.198 [http-nio-8099-exec-7] INFO  com.sz.gym.aspect.ControllerAspect - 请求方法 : GET
+2020-03-17 21:54:31.198 [http-nio-8099-exec-7] INFO  com.sz.gym.aspect.ControllerAspect - 请求IP地址 : 0:0:0:0:0:0:0:1
+2020-03-17 21:54:31.198 [http-nio-8099-exec-7] INFO  com.sz.gym.aspect.ControllerAspect - 请求参数 : [Product]
+2020-03-17 21:54:31.198 [http-nio-8099-exec-7] INFO  com.sz.gym.aspect.ControllerAspect - ################CLASS_METHOD : com.sz.gym.web.controller.CategoryController.getCategory
+2020-03-17 21:54:31.198 [http-nio-8099-exec-7] INFO  com.sz.gym.aspect.ControllerAspect - ################TARGET: com.sz.gym.web.controller.CategoryController@78011c9f
+2020-03-17 21:54:31.198 [http-nio-8099-exec-7] WARN  com.sz.gym.aspect.ControllerAspect - ======================请妥善使用SpringAOP功能================
+2020-03-17 21:54:31.198 [http-nio-8099-exec-6] INFO  com.sz.gym.aspect.ControllerAspect - 访问的URL : http://localhost:8099/Product
+2020-03-17 21:54:31.198 [http-nio-8099-exec-7] INFO  com.sz.gym.aspect.ControllerAspect - ################THIS: com.sz.gym.web.controller.CategoryController@78011c9f
+2020-03-17 21:54:31.198 [http-nio-8099-exec-6] INFO  com.sz.gym.aspect.ControllerAspect - 请求方法 : GET
+2020-03-17 21:54:31.198 [http-nio-8099-exec-7] INFO  com.sz.gym.web.controller.CategoryController - 打印请求参数：Product
+2020-03-17 21:54:31.198 [http-nio-8099-exec-6] INFO  com.sz.gym.aspect.ControllerAspect - 请求IP地址 : 0:0:0:0:0:0:0:1
+2020-03-17 21:54:31.198 [http-nio-8099-exec-6] INFO  com.sz.gym.aspect.ControllerAspect - 请求参数 : []
+2020-03-17 21:54:31.198 [http-nio-8099-exec-6] INFO  com.sz.gym.aspect.ControllerAspect - ################CLASS_METHOD : com.sz.gym.web.controller.ProductController.getProduct
+2020-03-17 21:54:31.198 [http-nio-8099-exec-6] INFO  com.sz.gym.aspect.ControllerAspect - ################TARGET: com.sz.gym.web.controller.ProductController@75bfb455
+2020-03-17 21:54:31.198 [http-nio-8099-exec-6] WARN  com.sz.gym.aspect.ControllerAspect - ======================请妥善使用SpringAOP功能================
+2020-03-17 21:54:31.199 [http-nio-8099-exec-6] INFO  com.sz.gym.aspect.ControllerAspect - ################THIS: com.sz.gym.web.controller.ProductController@75bfb455
+2020-03-17 21:54:31.199 [http-nio-8099-exec-7] DEBUG com.sz.gym.dao.CategoryMapper.selectByExample - ==>  Preparing: select category_id, category_name, category_type, create_time, update_time from category WHERE ( category_type = ? ) 
+2020-03-17 21:54:31.199 [http-nio-8099-exec-7] DEBUG com.sz.gym.dao.CategoryMapper.selectByExample - ==> Parameters: Product(String)
+2020-03-17 21:54:31.200 [http-nio-8099-exec-7] DEBUG com.sz.gym.dao.CategoryMapper.selectByExample - <==      Total: 2
+2020-03-17 21:54:31.203 [http-nio-8099-exec-6] DEBUG com.sz.gym.dao.ProductMapper.selectByExample - ==>  Preparing: select product_id, product_name, product_type, create_time, update_time, number, price, discription, product_status from product 
+2020-03-17 21:54:31.204 [http-nio-8099-exec-6] DEBUG com.sz.gym.dao.ProductMapper.selectByExample - ==> Parameters: 
+2020-03-17 21:54:31.205 [http-nio-8099-exec-6] DEBUG com.sz.gym.dao.ProductMapper.selectByExample - <==      Total: 2
+2020-03-17 21:54:39.184 [http-nio-8099-exec-8] INFO  com.sz.gym.aspect.ControllerAspect - 访问的URL : http://localhost:8099/activity
+2020-03-17 21:54:39.185 [http-nio-8099-exec-8] INFO  com.sz.gym.aspect.ControllerAspect - 请求方法 : GET
+2020-03-17 21:54:39.185 [http-nio-8099-exec-8] INFO  com.sz.gym.aspect.ControllerAspect - 请求IP地址 : 0:0:0:0:0:0:0:1
+2020-03-17 21:54:39.185 [http-nio-8099-exec-8] INFO  com.sz.gym.aspect.ControllerAspect - 请求参数 : []
+2020-03-17 21:54:39.185 [http-nio-8099-exec-9] INFO  com.sz.gym.aspect.ControllerAspect - 访问的URL : http://localhost:8099/employee
+2020-03-17 21:54:39.185 [http-nio-8099-exec-8] INFO  com.sz.gym.aspect.ControllerAspect - ################CLASS_METHOD : com.sz.gym.web.controller.ActivityController.selectActivity
+2020-03-17 21:54:39.185 [http-nio-8099-exec-9] INFO  com.sz.gym.aspect.ControllerAspect - 请求方法 : GET
+2020-03-17 21:54:39.185 [http-nio-8099-exec-8] INFO  com.sz.gym.aspect.ControllerAspect - ################TARGET: com.sz.gym.web.controller.ActivityController@61d6f63e
+2020-03-17 21:54:39.185 [http-nio-8099-exec-9] INFO  com.sz.gym.aspect.ControllerAspect - 请求IP地址 : 0:0:0:0:0:0:0:1
+2020-03-17 21:54:39.185 [http-nio-8099-exec-8] WARN  com.sz.gym.aspect.ControllerAspect - ======================请妥善使用SpringAOP功能================
+2020-03-17 21:54:39.185 [http-nio-8099-exec-9] INFO  com.sz.gym.aspect.ControllerAspect - 请求参数 : []
+2020-03-17 21:54:39.185 [http-nio-8099-exec-9] INFO  com.sz.gym.aspect.ControllerAspect - ################CLASS_METHOD : com.sz.gym.web.controller.EmployeeController.getAllEmployee
+2020-03-17 21:54:39.185 [http-nio-8099-exec-9] INFO  com.sz.gym.aspect.ControllerAspect - ################TARGET: com.sz.gym.web.controller.EmployeeController@93003f6
+2020-03-17 21:54:39.185 [http-nio-8099-exec-9] WARN  com.sz.gym.aspect.ControllerAspect - ======================请妥善使用SpringAOP功能================
+2020-03-17 21:54:39.185 [http-nio-8099-exec-8] INFO  com.sz.gym.aspect.ControllerAspect - ################THIS: com.sz.gym.web.controller.ActivityController@61d6f63e
+2020-03-17 21:54:39.185 [http-nio-8099-exec-9] INFO  com.sz.gym.aspect.ControllerAspect - ################THIS: com.sz.gym.web.controller.EmployeeController@93003f6
+2020-03-17 21:54:39.186 [http-nio-8099-exec-9] DEBUG com.sz.gym.dao.EmployeeMapper.selectByExample - ==>  Preparing: select employee_id, employee_name, employee_password, employee_post, CREATE_TIME, update_time, salary, employee_relname, employee_phone, employee_email, employee_address from employee 
+2020-03-17 21:54:39.186 [http-nio-8099-exec-9] DEBUG com.sz.gym.dao.EmployeeMapper.selectByExample - ==> Parameters: 
+2020-03-17 21:54:39.187 [http-nio-8099-exec-9] DEBUG com.sz.gym.dao.EmployeeMapper.selectByExample - <==      Total: 3
+2020-03-17 21:54:39.191 [http-nio-8099-exec-8] DEBUG com.sz.gym.dao.ActivityMapper.selectByExample - ==>  Preparing: select activity_id, activity_name, activity_description, activity_user, activity_residueTime, create_time, update_time, activity_status from activity 
+2020-03-17 21:54:39.191 [http-nio-8099-exec-8] DEBUG com.sz.gym.dao.ActivityMapper.selectByExample - ==> Parameters: 
+2020-03-17 21:54:39.193 [http-nio-8099-exec-8] DEBUG com.sz.gym.dao.ActivityMapper.selectByExample - <==      Total: 8
+2020-03-17 21:54:59.863 [http-nio-8099-exec-10] INFO  com.sz.gym.aspect.ControllerAspect - 访问的URL : http://localhost:8099/dashboard/headerNumber
+2020-03-17 21:54:59.863 [http-nio-8099-exec-10] INFO  com.sz.gym.aspect.ControllerAspect - 请求方法 : GET
+2020-03-17 21:54:59.863 [http-nio-8099-exec-10] INFO  com.sz.gym.aspect.ControllerAspect - 请求IP地址 : 0:0:0:0:0:0:0:1
+2020-03-17 21:54:59.863 [http-nio-8099-exec-10] INFO  com.sz.gym.aspect.ControllerAspect - 请求参数 : []
+2020-03-17 21:54:59.863 [http-nio-8099-exec-10] INFO  com.sz.gym.aspect.ControllerAspect - ################CLASS_METHOD : com.sz.gym.web.controller.DashboardController.headerNumber
+2020-03-17 21:54:59.863 [http-nio-8099-exec-10] INFO  com.sz.gym.aspect.ControllerAspect - ################TARGET: com.sz.gym.web.controller.DashboardController@5f389bdd
+2020-03-17 21:54:59.863 [http-nio-8099-exec-10] WARN  com.sz.gym.aspect.ControllerAspect - ======================请妥善使用SpringAOP功能================
+2020-03-17 21:54:59.863 [http-nio-8099-exec-10] INFO  com.sz.gym.aspect.ControllerAspect - ################THIS: com.sz.gym.web.controller.DashboardController@5f389bdd
+2020-03-17 21:54:59.863 [http-nio-8099-exec-1] INFO  com.sz.gym.aspect.ControllerAspect - 访问的URL : http://localhost:8099/employee
+2020-03-17 21:54:59.864 [http-nio-8099-exec-1] INFO  com.sz.gym.aspect.ControllerAspect - 请求方法 : GET
+2020-03-17 21:54:59.864 [http-nio-8099-exec-1] INFO  com.sz.gym.aspect.ControllerAspect - 请求IP地址 : 0:0:0:0:0:0:0:1
+2020-03-17 21:54:59.864 [http-nio-8099-exec-1] INFO  com.sz.gym.aspect.ControllerAspect - 请求参数 : []
+2020-03-17 21:54:59.864 [http-nio-8099-exec-1] INFO  com.sz.gym.aspect.ControllerAspect - ################CLASS_METHOD : com.sz.gym.web.controller.EmployeeController.getAllEmployee
+2020-03-17 21:54:59.864 [http-nio-8099-exec-1] INFO  com.sz.gym.aspect.ControllerAspect - ################TARGET: com.sz.gym.web.controller.EmployeeController@93003f6
+2020-03-17 21:54:59.864 [http-nio-8099-exec-1] WARN  com.sz.gym.aspect.ControllerAspect - ======================请妥善使用SpringAOP功能================
+2020-03-17 21:54:59.864 [http-nio-8099-exec-1] INFO  com.sz.gym.aspect.ControllerAspect - ################THIS: com.sz.gym.web.controller.EmployeeController@93003f6
+2020-03-17 21:54:59.865 [http-nio-8099-exec-1] DEBUG com.sz.gym.dao.EmployeeMapper.selectByExample - ==>  Preparing: select employee_id, employee_name, employee_password, employee_post, CREATE_TIME, update_time, salary, employee_relname, employee_phone, employee_email, employee_address from employee 
+2020-03-17 21:54:59.865 [http-nio-8099-exec-3] INFO  com.sz.gym.aspect.ControllerAspect - 访问的URL : http://localhost:8099/dashboard/facilitiesRatio
+2020-03-17 21:54:59.865 [http-nio-8099-exec-3] INFO  com.sz.gym.aspect.ControllerAspect - 请求方法 : GET
+2020-03-17 21:54:59.865 [http-nio-8099-exec-3] INFO  com.sz.gym.aspect.ControllerAspect - 请求IP地址 : 0:0:0:0:0:0:0:1
+2020-03-17 21:54:59.865 [http-nio-8099-exec-3] INFO  com.sz.gym.aspect.ControllerAspect - 请求参数 : []
+2020-03-17 21:54:59.865 [http-nio-8099-exec-5] INFO  com.sz.gym.aspect.ControllerAspect - 访问的URL : http://localhost:8099/dashboard/GetOptions
+2020-03-17 21:54:59.865 [http-nio-8099-exec-3] INFO  com.sz.gym.aspect.ControllerAspect - ################CLASS_METHOD : com.sz.gym.web.controller.DashboardController.getFacilitiesRatios
+2020-03-17 21:54:59.865 [http-nio-8099-exec-5] INFO  com.sz.gym.aspect.ControllerAspect - 请求方法 : GET
+2020-03-17 21:54:59.865 [http-nio-8099-exec-1] DEBUG com.sz.gym.dao.EmployeeMapper.selectByExample - ==> Parameters: 
+2020-03-17 21:54:59.865 [http-nio-8099-exec-3] INFO  com.sz.gym.aspect.ControllerAspect - ################TARGET: com.sz.gym.web.controller.DashboardController@5f389bdd
+2020-03-17 21:54:59.865 [http-nio-8099-exec-3] WARN  com.sz.gym.aspect.ControllerAspect - ======================请妥善使用SpringAOP功能================
+2020-03-17 21:54:59.865 [http-nio-8099-exec-3] INFO  com.sz.gym.aspect.ControllerAspect - ################THIS: com.sz.gym.web.controller.DashboardController@5f389bdd
+2020-03-17 21:54:59.865 [http-nio-8099-exec-5] INFO  com.sz.gym.aspect.ControllerAspect - 请求IP地址 : 0:0:0:0:0:0:0:1
+2020-03-17 21:54:59.865 [http-nio-8099-exec-5] INFO  com.sz.gym.aspect.ControllerAspect - 请求参数 : []
+2020-03-17 21:54:59.866 [http-nio-8099-exec-2] INFO  com.sz.gym.aspect.ControllerAspect - 访问的URL : http://localhost:8099/activity/OfDashboard
+2020-03-17 21:54:59.866 [http-nio-8099-exec-2] INFO  com.sz.gym.aspect.ControllerAspect - 请求方法 : GET
+2020-03-17 21:54:59.866 [http-nio-8099-exec-2] INFO  com.sz.gym.aspect.ControllerAspect - 请求IP地址 : 0:0:0:0:0:0:0:1
+2020-03-17 21:54:59.866 [http-nio-8099-exec-2] INFO  com.sz.gym.aspect.ControllerAspect - 请求参数 : []
+2020-03-17 21:54:59.866 [http-nio-8099-exec-2] INFO  com.sz.gym.aspect.ControllerAspect - ################CLASS_METHOD : com.sz.gym.web.controller.ActivityController.getActivityOfDashboard
+2020-03-17 21:54:59.866 [http-nio-8099-exec-2] INFO  com.sz.gym.aspect.ControllerAspect - ################TARGET: com.sz.gym.web.controller.ActivityController@61d6f63e
+2020-03-17 21:54:59.866 [http-nio-8099-exec-2] WARN  com.sz.gym.aspect.ControllerAspect - ======================请妥善使用SpringAOP功能================
+2020-03-17 21:54:59.866 [http-nio-8099-exec-2] INFO  com.sz.gym.aspect.ControllerAspect - ################THIS: com.sz.gym.web.controller.ActivityController@61d6f63e
+2020-03-17 21:54:59.866 [http-nio-8099-exec-5] INFO  com.sz.gym.aspect.ControllerAspect - ################CLASS_METHOD : com.sz.gym.web.controller.DashboardController.getDashboardSchartOfOptions
+2020-03-17 21:54:59.866 [http-nio-8099-exec-5] INFO  com.sz.gym.aspect.ControllerAspect - ################TARGET: com.sz.gym.web.controller.DashboardController@5f389bdd
+2020-03-17 21:54:59.866 [http-nio-8099-exec-5] WARN  com.sz.gym.aspect.ControllerAspect - ======================请妥善使用SpringAOP功能================
+2020-03-17 21:54:59.866 [http-nio-8099-exec-5] INFO  com.sz.gym.aspect.ControllerAspect - ################THIS: com.sz.gym.web.controller.DashboardController@5f389bdd
+2020-03-17 21:54:59.867 [http-nio-8099-exec-10] INFO  com.sz.gym.web.controller.DashboardController - 接收请求获取首页的员工 器械 和顾客 数量信息
+2020-03-17 21:54:59.867 [http-nio-8099-exec-3] INFO  com.sz.gym.web.controller.DashboardController - ====================接收请求获取首页器械比例============================
+2020-03-17 21:54:59.869 [http-nio-8099-exec-1] DEBUG com.sz.gym.dao.EmployeeMapper.selectByExample - <==      Total: 3
+2020-03-17 21:54:59.869 [http-nio-8099-exec-2] DEBUG com.sz.gym.dao.ActivityMapper.selectByExample - ==>  Preparing: select activity_id, activity_name, activity_description, activity_user, activity_residueTime, create_time, update_time, activity_status from activity 
+2020-03-17 21:54:59.870 [http-nio-8099-exec-2] DEBUG com.sz.gym.dao.ActivityMapper.selectByExample - ==> Parameters: 
+2020-03-17 21:54:59.871 [http-nio-8099-exec-10] INFO  com.sz.gym.service.impl.DashboardServiceImpl - 获取首页的数量信息
+2020-03-17 21:54:59.871 [http-nio-8099-exec-3] INFO  com.sz.gym.service.impl.DashboardServiceImpl - ==================获取首页的数量信息========Service================
+2020-03-17 21:54:59.872 [http-nio-8099-exec-3] DEBUG com.sz.gym.dao.FacilitiesMapper.selectByExample - ==>  Preparing: select id, facilities_name, number, create_time, update_time, discription, facilities_Status, price, facilities_type from facilities 
+2020-03-17 21:54:59.872 [http-nio-8099-exec-10] DEBUG com.sz.gym.dao.CustomerMapper.selectByExample - ==>  Preparing: select customer_id, customer_name, customer_phone, customer_type, customer_residueTime, create_time, update_time, birthday, customer_address, customer_description from customer 
+2020-03-17 21:54:59.872 [http-nio-8099-exec-3] DEBUG com.sz.gym.dao.FacilitiesMapper.selectByExample - ==> Parameters: 
+2020-03-17 21:54:59.872 [http-nio-8099-exec-10] DEBUG com.sz.gym.dao.CustomerMapper.selectByExample - ==> Parameters: 
+2020-03-17 21:54:59.873 [http-nio-8099-exec-10] DEBUG com.sz.gym.dao.CustomerMapper.selectByExample - <==      Total: 4
+2020-03-17 21:54:59.873 [http-nio-8099-exec-2] DEBUG com.sz.gym.dao.ActivityMapper.selectByExample - <==      Total: 8
+2020-03-17 21:54:59.874 [http-nio-8099-exec-10] DEBUG com.sz.gym.dao.FacilitiesMapper.selectByExample - ==>  Preparing: select id, facilities_name, number, create_time, update_time, discription, facilities_Status, price, facilities_type from facilities 
+2020-03-17 21:54:59.874 [http-nio-8099-exec-10] DEBUG com.sz.gym.dao.FacilitiesMapper.selectByExample - ==> Parameters: 
+2020-03-17 21:54:59.874 [http-nio-8099-exec-5] DEBUG com.sz.gym.dao.FinanceMapper.selectByExample - ==>  Preparing: select finance_id, finance_name, finance_description, finance_type, create_time, money, finance_reclassify from finance WHERE ( create_time between ? and ? ) 
+2020-03-17 21:54:59.874 [http-nio-8099-exec-5] DEBUG com.sz.gym.dao.FinanceMapper.selectByExample - ==> Parameters: 2020-03-14 21:54:59.0(Timestamp), 2020-03-17 21:54:59.872(Timestamp)
+2020-03-17 21:54:59.875 [http-nio-8099-exec-3] DEBUG com.sz.gym.dao.FacilitiesMapper.selectByExample - <==      Total: 9
+2020-03-17 21:54:59.875 [http-nio-8099-exec-10] DEBUG com.sz.gym.dao.FacilitiesMapper.selectByExample - <==      Total: 9
+2020-03-17 21:54:59.876 [http-nio-8099-exec-3] DEBUG com.sz.gym.service.impl.DashboardServiceImpl - =======================计算不同的比列==============================
+2020-03-17 21:54:59.876 [http-nio-8099-exec-10] DEBUG com.sz.gym.dao.EmployeeMapper.selectByExample - ==>  Preparing: select employee_id, employee_name, employee_password, employee_post, CREATE_TIME, update_time, salary, employee_relname, employee_phone, employee_email, employee_address from employee 
+2020-03-17 21:54:59.876 [http-nio-8099-exec-10] DEBUG com.sz.gym.dao.EmployeeMapper.selectByExample - ==> Parameters: 
+2020-03-17 21:54:59.876 [http-nio-8099-exec-3] DEBUG com.sz.gym.service.impl.DashboardServiceImpl - ==================有氧健身：22
+2020-03-17 21:54:59.877 [http-nio-8099-exec-5] DEBUG com.sz.gym.dao.FinanceMapper.selectByExample - <==      Total: 14
+2020-03-17 21:54:59.877 [http-nio-8099-exec-10] DEBUG com.sz.gym.dao.EmployeeMapper.selectByExample - <==      Total: 3
+2020-03-17 21:55:47.250 [http-nio-8099-exec-4] INFO  com.sz.gym.aspect.ControllerAspect - 访问的URL : http://localhost:8099/activity/UpdateStatus
+2020-03-17 21:55:47.250 [http-nio-8099-exec-4] INFO  com.sz.gym.aspect.ControllerAspect - 请求方法 : GET
+2020-03-17 21:55:47.250 [http-nio-8099-exec-4] INFO  com.sz.gym.aspect.ControllerAspect - 请求IP地址 : 0:0:0:0:0:0:0:1
+2020-03-17 21:55:47.250 [http-nio-8099-exec-4] INFO  com.sz.gym.aspect.ControllerAspect - 请求参数 : []
+2020-03-17 21:55:47.251 [http-nio-8099-exec-4] INFO  com.sz.gym.aspect.ControllerAspect - ################CLASS_METHOD : com.sz.gym.web.controller.ActivityController.getActivityByStatus
+2020-03-17 21:55:47.251 [http-nio-8099-exec-4] INFO  com.sz.gym.aspect.ControllerAspect - ################TARGET: com.sz.gym.web.controller.ActivityController@61d6f63e
+2020-03-17 21:55:47.251 [http-nio-8099-exec-4] WARN  com.sz.gym.aspect.ControllerAspect - ======================请妥善使用SpringAOP功能================
+2020-03-17 21:55:47.251 [http-nio-8099-exec-4] INFO  com.sz.gym.aspect.ControllerAspect - ################THIS: com.sz.gym.web.controller.ActivityController@61d6f63e
+2020-03-17 21:55:47.251 [http-nio-8099-exec-4] DEBUG com.sz.gym.dao.ActivityMapper.selectByExample - ==>  Preparing: select activity_id, activity_name, activity_description, activity_user, activity_residueTime, create_time, update_time, activity_status from activity 
+2020-03-17 21:55:47.251 [http-nio-8099-exec-4] DEBUG com.sz.gym.dao.ActivityMapper.selectByExample - ==> Parameters: 
+2020-03-17 21:55:47.252 [http-nio-8099-exec-4] DEBUG com.sz.gym.dao.ActivityMapper.selectByExample - <==      Total: 8
+2020-03-17 21:55:59.041 [http-nio-8099-exec-7] INFO  com.sz.gym.aspect.ControllerAspect - 访问的URL : http://localhost:8099/employeeShow
+2020-03-17 21:55:59.042 [http-nio-8099-exec-7] INFO  com.sz.gym.aspect.ControllerAspect - 请求方法 : GET
+2020-03-17 21:55:59.042 [http-nio-8099-exec-7] INFO  com.sz.gym.aspect.ControllerAspect - 请求IP地址 : 0:0:0:0:0:0:0:1
+2020-03-17 21:55:59.042 [http-nio-8099-exec-7] INFO  com.sz.gym.aspect.ControllerAspect - 请求参数 : []
+2020-03-17 21:55:59.042 [http-nio-8099-exec-7] INFO  com.sz.gym.aspect.ControllerAspect - ################CLASS_METHOD : com.sz.gym.web.controller.EmployeeController.getEmployeeShow
+2020-03-17 21:55:59.042 [http-nio-8099-exec-7] INFO  com.sz.gym.aspect.ControllerAspect - ################TARGET: com.sz.gym.web.controller.EmployeeController@93003f6
+2020-03-17 21:55:59.042 [http-nio-8099-exec-7] WARN  com.sz.gym.aspect.ControllerAspect - ======================请妥善使用SpringAOP功能================
+2020-03-17 21:55:59.042 [http-nio-8099-exec-7] INFO  com.sz.gym.aspect.ControllerAspect - ################THIS: com.sz.gym.web.controller.EmployeeController@93003f6
+2020-03-17 21:55:59.042 [http-nio-8099-exec-7] DEBUG com.sz.gym.dao.EmployeeMapper.selectByExample - ==>  Preparing: select employee_id, employee_name, employee_password, employee_post, CREATE_TIME, update_time, salary, employee_relname, employee_phone, employee_email, employee_address from employee 
+2020-03-17 21:55:59.043 [http-nio-8099-exec-7] DEBUG com.sz.gym.dao.EmployeeMapper.selectByExample - ==> Parameters: 
+2020-03-17 21:55:59.043 [http-nio-8099-exec-7] DEBUG com.sz.gym.dao.EmployeeMapper.selectByExample - <==      Total: 3
+2020-03-17 21:57:43.383 [http-nio-8099-exec-3] INFO  com.sz.gym.aspect.ControllerAspect - 访问的URL : http://localhost:8099/Customer
+2020-03-17 21:57:43.383 [http-nio-8099-exec-3] INFO  com.sz.gym.aspect.ControllerAspect - 请求方法 : GET
+2020-03-17 21:57:43.383 [http-nio-8099-exec-3] INFO  com.sz.gym.aspect.ControllerAspect - 请求IP地址 : 0:0:0:0:0:0:0:1
+2020-03-17 21:57:43.383 [http-nio-8099-exec-3] INFO  com.sz.gym.aspect.ControllerAspect - 请求参数 : []
+2020-03-17 21:57:43.383 [http-nio-8099-exec-3] INFO  com.sz.gym.aspect.ControllerAspect - ################CLASS_METHOD : com.sz.gym.web.controller.CustomerController.getCustomerAll
+2020-03-17 21:57:43.383 [http-nio-8099-exec-3] INFO  com.sz.gym.aspect.ControllerAspect - ################TARGET: com.sz.gym.web.controller.CustomerController@3eecd57
+2020-03-17 21:57:43.383 [http-nio-8099-exec-3] WARN  com.sz.gym.aspect.ControllerAspect - ======================请妥善使用SpringAOP功能================
+2020-03-17 21:57:43.383 [http-nio-8099-exec-3] INFO  com.sz.gym.aspect.ControllerAspect - ################THIS: com.sz.gym.web.controller.CustomerController@3eecd57
+2020-03-17 21:57:43.384 [http-nio-8099-exec-3] DEBUG com.sz.gym.dao.CustomerMapper.selectByExample - ==>  Preparing: select customer_id, customer_name, customer_phone, customer_type, customer_residueTime, create_time, update_time, birthday, customer_address, customer_description from customer 
+2020-03-17 21:57:43.384 [http-nio-8099-exec-3] DEBUG com.sz.gym.dao.CustomerMapper.selectByExample - ==> Parameters: 
+2020-03-17 21:57:43.385 [http-nio-8099-exec-3] DEBUG com.sz.gym.dao.CustomerMapper.selectByExample - <==      Total: 4
+2020-03-17 21:57:43.942 [http-nio-8099-exec-10] INFO  com.sz.gym.aspect.ControllerAspect - 访问的URL : http://localhost:8099/employeeShow
+2020-03-17 21:57:43.942 [http-nio-8099-exec-10] INFO  com.sz.gym.aspect.ControllerAspect - 请求方法 : GET
+2020-03-17 21:57:43.942 [http-nio-8099-exec-10] INFO  com.sz.gym.aspect.ControllerAspect - 请求IP地址 : 0:0:0:0:0:0:0:1
+2020-03-17 21:57:43.942 [http-nio-8099-exec-10] INFO  com.sz.gym.aspect.ControllerAspect - 请求参数 : []
+2020-03-17 21:57:43.942 [http-nio-8099-exec-10] INFO  com.sz.gym.aspect.ControllerAspect - ################CLASS_METHOD : com.sz.gym.web.controller.EmployeeController.getEmployeeShow
+2020-03-17 21:57:43.942 [http-nio-8099-exec-10] INFO  com.sz.gym.aspect.ControllerAspect - ################TARGET: com.sz.gym.web.controller.EmployeeController@93003f6
+2020-03-17 21:57:43.942 [http-nio-8099-exec-10] WARN  com.sz.gym.aspect.ControllerAspect - ======================请妥善使用SpringAOP功能================
+2020-03-17 21:57:43.942 [http-nio-8099-exec-10] INFO  com.sz.gym.aspect.ControllerAspect - ################THIS: com.sz.gym.web.controller.EmployeeController@93003f6
+2020-03-17 21:57:43.943 [http-nio-8099-exec-10] DEBUG com.sz.gym.dao.EmployeeMapper.selectByExample - ==>  Preparing: select employee_id, employee_name, employee_password, employee_post, CREATE_TIME, update_time, salary, employee_relname, employee_phone, employee_email, employee_address from employee 
+2020-03-17 21:57:43.943 [http-nio-8099-exec-10] DEBUG com.sz.gym.dao.EmployeeMapper.selectByExample - ==> Parameters: 
+2020-03-17 21:57:43.945 [http-nio-8099-exec-10] DEBUG com.sz.gym.dao.EmployeeMapper.selectByExample - <==      Total: 3
+2020-03-17 21:57:45.425 [http-nio-8099-exec-5] INFO  com.sz.gym.aspect.ControllerAspect - 访问的URL : http://localhost:8099/Category
+2020-03-17 21:57:45.425 [http-nio-8099-exec-5] INFO  com.sz.gym.aspect.ControllerAspect - 请求方法 : GET
+2020-03-17 21:57:45.425 [http-nio-8099-exec-5] INFO  com.sz.gym.aspect.ControllerAspect - 请求IP地址 : 0:0:0:0:0:0:0:1
+2020-03-17 21:57:45.425 [http-nio-8099-exec-5] INFO  com.sz.gym.aspect.ControllerAspect - 请求参数 : []
+2020-03-17 21:57:45.425 [http-nio-8099-exec-5] INFO  com.sz.gym.aspect.ControllerAspect - ################CLASS_METHOD : com.sz.gym.web.controller.CategoryController.getCategory
+2020-03-17 21:57:45.425 [http-nio-8099-exec-5] INFO  com.sz.gym.aspect.ControllerAspect - ################TARGET: com.sz.gym.web.controller.CategoryController@78011c9f
+2020-03-17 21:57:45.425 [http-nio-8099-exec-5] WARN  com.sz.gym.aspect.ControllerAspect - ======================请妥善使用SpringAOP功能================
+2020-03-17 21:57:45.425 [http-nio-8099-exec-5] INFO  com.sz.gym.aspect.ControllerAspect - ################THIS: com.sz.gym.web.controller.CategoryController@78011c9f
+2020-03-17 21:57:45.426 [http-nio-8099-exec-5] DEBUG com.sz.gym.dao.CategoryMapper.selectByExample - ==>  Preparing: select category_id, category_name, category_type, create_time, update_time from category 
+2020-03-17 21:57:45.426 [http-nio-8099-exec-5] DEBUG com.sz.gym.dao.CategoryMapper.selectByExample - ==> Parameters: 
+2020-03-17 21:57:45.427 [http-nio-8099-exec-5] DEBUG com.sz.gym.dao.CategoryMapper.selectByExample - <==      Total: 5
+2020-03-17 21:57:45.427 [http-nio-8099-exec-5] DEBUG com.sz.gym.service.impl.CategoryServiceImpl - 共查询出类目种类5个
+2020-03-17 21:57:45.927 [http-nio-8099-exec-4] INFO  com.sz.gym.aspect.ControllerAspect - 访问的URL : http://localhost:8099/Facilities
+2020-03-17 21:57:45.927 [http-nio-8099-exec-4] INFO  com.sz.gym.aspect.ControllerAspect - 请求方法 : GET
+2020-03-17 21:57:45.927 [http-nio-8099-exec-4] INFO  com.sz.gym.aspect.ControllerAspect - 请求IP地址 : 0:0:0:0:0:0:0:1
+2020-03-17 21:57:45.927 [http-nio-8099-exec-4] INFO  com.sz.gym.aspect.ControllerAspect - 请求参数 : []
+2020-03-17 21:57:45.927 [http-nio-8099-exec-4] INFO  com.sz.gym.aspect.ControllerAspect - ################CLASS_METHOD : com.sz.gym.web.controller.FacilitiesController.getFacilities
+2020-03-17 21:57:45.927 [http-nio-8099-exec-4] INFO  com.sz.gym.aspect.ControllerAspect - ################TARGET: com.sz.gym.web.controller.FacilitiesController@214565d9
+2020-03-17 21:57:45.927 [http-nio-8099-exec-4] WARN  com.sz.gym.aspect.ControllerAspect - ======================请妥善使用SpringAOP功能================
+2020-03-17 21:57:45.927 [http-nio-8099-exec-4] INFO  com.sz.gym.aspect.ControllerAspect - ################THIS: com.sz.gym.web.controller.FacilitiesController@214565d9
+2020-03-17 21:57:45.928 [http-nio-8099-exec-4] DEBUG com.sz.gym.dao.FacilitiesMapper.selectByExample - ==>  Preparing: select id, facilities_name, number, create_time, update_time, discription, facilities_Status, price, facilities_type from facilities 
+2020-03-17 21:57:45.928 [http-nio-8099-exec-4] DEBUG com.sz.gym.dao.FacilitiesMapper.selectByExample - ==> Parameters: 
+2020-03-17 21:57:45.928 [http-nio-8099-exec-7] INFO  com.sz.gym.aspect.ControllerAspect - 访问的URL : http://localhost:8099/Category/CategoryType
+2020-03-17 21:57:45.928 [http-nio-8099-exec-7] INFO  com.sz.gym.aspect.ControllerAspect - 请求方法 : GET
+2020-03-17 21:57:45.928 [http-nio-8099-exec-7] INFO  com.sz.gym.aspect.ControllerAspect - 请求IP地址 : 0:0:0:0:0:0:0:1
+2020-03-17 21:57:45.928 [http-nio-8099-exec-7] INFO  com.sz.gym.aspect.ControllerAspect - 请求参数 : [facilities]
+2020-03-17 21:57:45.928 [http-nio-8099-exec-7] INFO  com.sz.gym.aspect.ControllerAspect - ################CLASS_METHOD : com.sz.gym.web.controller.CategoryController.getCategory
+2020-03-17 21:57:45.928 [http-nio-8099-exec-7] INFO  com.sz.gym.aspect.ControllerAspect - ################TARGET: com.sz.gym.web.controller.CategoryController@78011c9f
+2020-03-17 21:57:45.928 [http-nio-8099-exec-7] WARN  com.sz.gym.aspect.ControllerAspect - ======================请妥善使用SpringAOP功能================
+2020-03-17 21:57:45.928 [http-nio-8099-exec-7] INFO  com.sz.gym.aspect.ControllerAspect - ################THIS: com.sz.gym.web.controller.CategoryController@78011c9f
+2020-03-17 21:57:45.928 [http-nio-8099-exec-7] INFO  com.sz.gym.web.controller.CategoryController - 打印请求参数：facilities
+2020-03-17 21:57:45.929 [http-nio-8099-exec-4] DEBUG com.sz.gym.dao.FacilitiesMapper.selectByExample - <==      Total: 9
+2020-03-17 21:57:45.929 [http-nio-8099-exec-7] DEBUG com.sz.gym.dao.CategoryMapper.selectByExample - ==>  Preparing: select category_id, category_name, category_type, create_time, update_time from category WHERE ( category_type = ? ) 
+2020-03-17 21:57:45.929 [http-nio-8099-exec-7] DEBUG com.sz.gym.dao.CategoryMapper.selectByExample - ==> Parameters: facilities(String)
+2020-03-17 21:57:45.932 [http-nio-8099-exec-7] DEBUG com.sz.gym.dao.CategoryMapper.selectByExample - <==      Total: 3
+2020-03-17 21:57:46.559 [http-nio-8099-exec-6] INFO  com.sz.gym.aspect.ControllerAspect - 访问的URL : http://localhost:8099/Product
+2020-03-17 21:57:46.559 [http-nio-8099-exec-9] INFO  com.sz.gym.aspect.ControllerAspect - 访问的URL : http://localhost:8099/Category/CategoryType
+2020-03-17 21:57:46.559 [http-nio-8099-exec-9] INFO  com.sz.gym.aspect.ControllerAspect - 请求方法 : GET
+2020-03-17 21:57:46.559 [http-nio-8099-exec-6] INFO  com.sz.gym.aspect.ControllerAspect - 请求方法 : GET
+2020-03-17 21:57:46.559 [http-nio-8099-exec-9] INFO  com.sz.gym.aspect.ControllerAspect - 请求IP地址 : 0:0:0:0:0:0:0:1
+2020-03-17 21:57:46.559 [http-nio-8099-exec-6] INFO  com.sz.gym.aspect.ControllerAspect - 请求IP地址 : 0:0:0:0:0:0:0:1
+2020-03-17 21:57:46.559 [http-nio-8099-exec-9] INFO  com.sz.gym.aspect.ControllerAspect - 请求参数 : [Product]
+2020-03-17 21:57:46.559 [http-nio-8099-exec-6] INFO  com.sz.gym.aspect.ControllerAspect - 请求参数 : []
+2020-03-17 21:57:46.559 [http-nio-8099-exec-9] INFO  com.sz.gym.aspect.ControllerAspect - ################CLASS_METHOD : com.sz.gym.web.controller.CategoryController.getCategory
+2020-03-17 21:57:46.559 [http-nio-8099-exec-6] INFO  com.sz.gym.aspect.ControllerAspect - ################CLASS_METHOD : com.sz.gym.web.controller.ProductController.getProduct
+2020-03-17 21:57:46.559 [http-nio-8099-exec-9] INFO  com.sz.gym.aspect.ControllerAspect - ################TARGET: com.sz.gym.web.controller.CategoryController@78011c9f
+2020-03-17 21:57:46.559 [http-nio-8099-exec-6] INFO  com.sz.gym.aspect.ControllerAspect - ################TARGET: com.sz.gym.web.controller.ProductController@75bfb455
+2020-03-17 21:57:46.559 [http-nio-8099-exec-9] WARN  com.sz.gym.aspect.ControllerAspect - ======================请妥善使用SpringAOP功能================
+2020-03-17 21:57:46.559 [http-nio-8099-exec-6] WARN  com.sz.gym.aspect.ControllerAspect - ======================请妥善使用SpringAOP功能================
+2020-03-17 21:57:46.559 [http-nio-8099-exec-9] INFO  com.sz.gym.aspect.ControllerAspect - ################THIS: com.sz.gym.web.controller.CategoryController@78011c9f
+2020-03-17 21:57:46.559 [http-nio-8099-exec-6] INFO  com.sz.gym.aspect.ControllerAspect - ################THIS: com.sz.gym.web.controller.ProductController@75bfb455
+2020-03-17 21:57:46.559 [http-nio-8099-exec-9] INFO  com.sz.gym.web.controller.CategoryController - 打印请求参数：Product
+2020-03-17 21:57:46.560 [http-nio-8099-exec-9] DEBUG com.sz.gym.dao.CategoryMapper.selectByExample - ==>  Preparing: select category_id, category_name, category_type, create_time, update_time from category WHERE ( category_type = ? ) 
+2020-03-17 21:57:46.560 [http-nio-8099-exec-6] DEBUG com.sz.gym.dao.ProductMapper.selectByExample - ==>  Preparing: select product_id, product_name, product_type, create_time, update_time, number, price, discription, product_status from product 
+2020-03-17 21:57:46.560 [http-nio-8099-exec-6] DEBUG com.sz.gym.dao.ProductMapper.selectByExample - ==> Parameters: 
+2020-03-17 21:57:46.560 [http-nio-8099-exec-9] DEBUG com.sz.gym.dao.CategoryMapper.selectByExample - ==> Parameters: Product(String)
+2020-03-17 21:57:46.561 [http-nio-8099-exec-9] DEBUG com.sz.gym.dao.CategoryMapper.selectByExample - <==      Total: 2
+2020-03-17 21:57:46.561 [http-nio-8099-exec-6] DEBUG com.sz.gym.dao.ProductMapper.selectByExample - <==      Total: 2
+2020-03-17 21:57:52.813 [http-nio-8099-exec-1] INFO  com.sz.gym.aspect.ControllerAspect - 访问的URL : http://localhost:8099/activity
+2020-03-17 21:57:52.813 [http-nio-8099-exec-8] INFO  com.sz.gym.aspect.ControllerAspect - 访问的URL : http://localhost:8099/employee
+2020-03-17 21:57:52.813 [http-nio-8099-exec-1] INFO  com.sz.gym.aspect.ControllerAspect - 请求方法 : GET
+2020-03-17 21:57:52.813 [http-nio-8099-exec-8] INFO  com.sz.gym.aspect.ControllerAspect - 请求方法 : GET
+2020-03-17 21:57:52.813 [http-nio-8099-exec-1] INFO  com.sz.gym.aspect.ControllerAspect - 请求IP地址 : 0:0:0:0:0:0:0:1
+2020-03-17 21:57:52.813 [http-nio-8099-exec-8] INFO  com.sz.gym.aspect.ControllerAspect - 请求IP地址 : 0:0:0:0:0:0:0:1
+2020-03-17 21:57:52.813 [http-nio-8099-exec-1] INFO  com.sz.gym.aspect.ControllerAspect - 请求参数 : []
+2020-03-17 21:57:52.813 [http-nio-8099-exec-8] INFO  com.sz.gym.aspect.ControllerAspect - 请求参数 : []
+2020-03-17 21:57:52.813 [http-nio-8099-exec-1] INFO  com.sz.gym.aspect.ControllerAspect - ################CLASS_METHOD : com.sz.gym.web.controller.ActivityController.selectActivity
+2020-03-17 21:57:52.813 [http-nio-8099-exec-8] INFO  com.sz.gym.aspect.ControllerAspect - ################CLASS_METHOD : com.sz.gym.web.controller.EmployeeController.getAllEmployee
+2020-03-17 21:57:52.813 [http-nio-8099-exec-8] INFO  com.sz.gym.aspect.ControllerAspect - ################TARGET: com.sz.gym.web.controller.EmployeeController@93003f6
+2020-03-17 21:57:52.813 [http-nio-8099-exec-1] INFO  com.sz.gym.aspect.ControllerAspect - ################TARGET: com.sz.gym.web.controller.ActivityController@61d6f63e
+2020-03-17 21:57:52.813 [http-nio-8099-exec-8] WARN  com.sz.gym.aspect.ControllerAspect - ======================请妥善使用SpringAOP功能================
+2020-03-17 21:57:52.813 [http-nio-8099-exec-1] WARN  com.sz.gym.aspect.ControllerAspect - ======================请妥善使用SpringAOP功能================
+2020-03-17 21:57:52.813 [http-nio-8099-exec-8] INFO  com.sz.gym.aspect.ControllerAspect - ################THIS: com.sz.gym.web.controller.EmployeeController@93003f6
+2020-03-17 21:57:52.813 [http-nio-8099-exec-1] INFO  com.sz.gym.aspect.ControllerAspect - ################THIS: com.sz.gym.web.controller.ActivityController@61d6f63e
+2020-03-17 21:57:52.814 [http-nio-8099-exec-1] DEBUG com.sz.gym.dao.ActivityMapper.selectByExample - ==>  Preparing: select activity_id, activity_name, activity_description, activity_user, activity_residueTime, create_time, update_time, activity_status from activity 
+2020-03-17 21:57:52.814 [http-nio-8099-exec-1] DEBUG com.sz.gym.dao.ActivityMapper.selectByExample - ==> Parameters: 
+2020-03-17 21:57:52.814 [http-nio-8099-exec-8] DEBUG com.sz.gym.dao.EmployeeMapper.selectByExample - ==>  Preparing: select employee_id, employee_name, employee_password, employee_post, CREATE_TIME, update_time, salary, employee_relname, employee_phone, employee_email, employee_address from employee 
+2020-03-17 21:57:52.814 [http-nio-8099-exec-8] DEBUG com.sz.gym.dao.EmployeeMapper.selectByExample - ==> Parameters: 
+2020-03-17 21:57:52.815 [http-nio-8099-exec-8] DEBUG com.sz.gym.dao.EmployeeMapper.selectByExample - <==      Total: 3
+2020-03-17 21:57:52.815 [http-nio-8099-exec-1] DEBUG com.sz.gym.dao.ActivityMapper.selectByExample - <==      Total: 8
