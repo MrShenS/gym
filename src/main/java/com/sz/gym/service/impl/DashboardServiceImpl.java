@@ -13,6 +13,7 @@ import com.sz.gym.model.entity.*;
 import com.sz.gym.service.DashboardService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -77,11 +78,6 @@ public class DashboardServiceImpl implements DashboardService {
             }
         }
         int sum = facilities.size();
-        System.out.println("SUM======"+sum);
-        System.out.println("facilitiesByType1======"+facilitiesByType1.size());
-        System.out.println("facilitiesByType2======"+facilitiesByType2.size());
-        System.out.println("facilitiesByType3======"+facilitiesByType3.size());
-
         log.debug("=======================计算不同的比列==============================");
         //有氧健身比例
         FacilitiesRatioDTO facilitiesRatioDTO1 =

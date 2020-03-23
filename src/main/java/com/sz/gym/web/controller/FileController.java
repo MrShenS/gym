@@ -5,7 +5,6 @@ import com.sz.gym.model.enums.ConstantEnum;
 import com.sz.gym.model.vo.BaseVO;
 import com.sz.gym.service.FileService;
 import com.sz.gym.utils.Utils;
-import com.sz.gym.utils.UuidUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
@@ -92,17 +91,13 @@ public class FileController {
         OutputStream os = null;
         InputStream is= null;
         try {
-           
             // 取得输出流
             os = response.getOutputStream();
             // 清空输出流
             response.reset();
             response.setContentType("application/vnd.ms-excel;charset=UTF-8");
             response.setCharacterEncoding("UTF-8");
-//            response.setHeader("Content-Disposition", "attachment;fileName=" + java.net.URLEncoder.encode("userTemplate.xls","UTF-8"));
             response.setHeader("content-disposition","attachment;filename=" + URLEncoder.encode(fileName,"UTF-8"));
-//            response.setContentType("application/x-download;charset=GBK");
-//            response.setHeader("Content-Disposition", "attachment;filename="+ new String(fileName.getBytes("utf-8"), "iso-8859-1"));
             //读取流
             File f = new File("D://Git/MrshenS/graduationProject/image/"+fileName);
             is = new FileInputStream(f);

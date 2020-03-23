@@ -34,7 +34,7 @@ public class ScheduledConfig {
  * @return
  **/
 
-    @Scheduled(cron = "* 4 * * * *")
+    @Scheduled(cron = "* * 1 * * *")
     @Transactional
     public void checkCustomer(){
         log.info("=====>>>>会员时间减一  {}",System.currentTimeMillis());
