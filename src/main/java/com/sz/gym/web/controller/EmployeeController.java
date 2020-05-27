@@ -1,16 +1,21 @@
 package com.sz.gym.web.controller;
 
+import com.sz.gym.model.enums.ConstantEnum;
 import com.sz.gym.model.param.LoginParam;
 import com.sz.gym.model.param.QueryParam;
 import com.sz.gym.model.vo.BaseVO;
 import com.sz.gym.model.vo.TableShowVO;
 import com.sz.gym.model.entity.Employee;
 import com.sz.gym.service.EmployeeService;
+import com.sz.gym.utils.MD5Util;
 import com.sz.gym.utils.RedisUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.util.Date;
 import java.util.List;
 
@@ -32,6 +37,7 @@ public class EmployeeController {
 
     @Autowired
     public RedisUtil redisUtil;
+    
 
     @PostMapping("/register")
     public BaseVO<Employee> register(@RequestBody Employee employee){
@@ -39,7 +45,13 @@ public class EmployeeController {
     }
 
     @PostMapping("/login")
-    public BaseVO<LoginParam> login(@RequestBody LoginParam loginParam){
+    public BaseVO<LoginParam> login(@RequestBody LoginParam loginParam, HttpServletRequest request, HttpServletResponse response){
+        String md5Encode = MD5Util.MD5Encode(loginParam.username, Math.random() + "");
+        BaseVO<LoginParam> login = employeeService.login(loginParam);
+        if(ConstantEnum.success.toString().equals(login.getStatus())){
+            Cookie cookie = new Cookie("token",md5Encode);
+
+        }
         return employeeService.login(loginParam);
     }
 
@@ -64,7 +76,7 @@ public class EmployeeController {
         log.debug("调试条件查询");
         log.info("===========================条件查询======================================");
         log.info("查询条件"+queryParam.toString());
-        log.debug("查看一下redis中的值："+redisUtil.get("redisCache::redis_user_QueryParam(employeeName=, employeeAddress=)"));
+//        log.debug("查看一下redis中的值："+redisUtil.get("redisCache::redis_user_QueryParam(employeeName=, employeeAddress=)"));
         return employeeService.getEmployeeByQueryParam(queryParam);
     }
 

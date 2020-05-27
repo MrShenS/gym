@@ -1,0 +1,301 @@
+2020-03-28 18:17:38.070 [background-preinit] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2020-03-28 18:17:38.074 [background-preinit] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2020-03-28 18:17:38.074 [background-preinit] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2020-03-28 18:17:38.074 [background-preinit] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2020-03-28 18:17:38.074 [background-preinit] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2020-03-28 18:17:38.238 [restartedMain] INFO  com.sz.gym.GymApplication - Starting GymApplication on DESKTOP-R9H54P2 with PID 24276 (D:\Git\MrshenS\graduationProject\gym\target\classes started by 10518 in D:\Git\MrshenS\graduationProject\gym)
+2020-03-28 18:17:38.239 [restartedMain] DEBUG com.sz.gym.GymApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-03-28 18:17:38.240 [restartedMain] INFO  com.sz.gym.GymApplication - No active profile set, falling back to default profiles: default
+2020-03-28 18:17:40.103 [restartedMain] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-03-28 18:17:41.140 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8099"]
+2020-03-28 18:17:41.141 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-28 18:17:41.141 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-03-28 18:17:41.427 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-28 18:17:43.313 [restartedMain] DEBUG o.h.v.i.engine.resolver.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2020-03-28 18:17:43.313 [restartedMain] DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2020-03-28 18:17:43.316 [restartedMain] DEBUG o.h.v.i.engine.resolver.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2020-03-28 18:17:43.317 [restartedMain] DEBUG o.h.validator.internal.engine.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2020-03-28 18:17:43.318 [restartedMain] DEBUG o.h.validator.internal.engine.ConfigurationImpl - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2020-03-28 18:17:43.319 [restartedMain] DEBUG o.h.validator.internal.engine.ConfigurationImpl - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2020-03-28 18:17:43.320 [restartedMain] DEBUG o.h.v.internal.xml.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2020-03-28 18:17:43.320 [restartedMain] DEBUG o.h.v.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via user class loader
+2020-03-28 18:17:43.320 [restartedMain] DEBUG o.h.v.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2020-03-28 18:17:43.320 [restartedMain] DEBUG o.h.v.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2020-03-28 18:17:43.321 [restartedMain] DEBUG o.h.v.internal.xml.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2020-03-28 18:17:43.324 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2020-03-28 18:17:43.325 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2020-03-28 18:17:43.325 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2020-03-28 18:17:43.325 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2020-03-28 18:17:43.325 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2020-03-28 18:17:44.772 [restartedMain] WARN  o.s.b.s.r.RedisStarterDeprecationWarningAutoConfiguration - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2020-03-28 18:17:44.829 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8099"]
+2020-03-28 18:17:44.872 [restartedMain] INFO  com.sz.gym.GymApplication - Started GymApplication in 7.451 seconds (JVM running for 9.56)
+2020-03-28 18:17:44.875 [restartedMain] INFO  com.sz.gym.listener.StartedListener - 本项目spring容器共管理270个类
+2020-03-28 18:17:44.875 [restartedMain] INFO  com.sz.gym.listener.StartedListener - welcome to 世界五百强健身房管理系统  颤抖凡人
+2020-03-28 18:17:44.876 [restartedMain] INFO  com.sz.gym.listener.StartedListener - GYM World started at         http://192.168.0.119:8099
+2020-03-28 18:17:44.876 [restartedMain] INFO  com.sz.gym.listener.StartedListener - 启动时间为：Sat Mar 28 18:17:44 CST 2020
+2020-03-28 18:22:24.999 [restartedMain] INFO  com.sz.gym.GymApplication - Starting GymApplication on DESKTOP-R9H54P2 with PID 24276 (D:\Git\MrshenS\graduationProject\gym\target\classes started by 10518 in D:\Git\MrshenS\graduationProject\gym)
+2020-03-28 18:22:25.000 [restartedMain] DEBUG com.sz.gym.GymApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-03-28 18:22:25.000 [restartedMain] INFO  com.sz.gym.GymApplication - No active profile set, falling back to default profiles: default
+2020-03-28 18:22:25.382 [restartedMain] WARN  org.apache.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+2020-03-28 18:22:25.415 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8099"]
+2020-03-28 18:22:25.416 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-28 18:22:25.416 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-03-28 18:22:25.439 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-28 18:22:25.770 [restartedMain] DEBUG o.h.v.i.engine.resolver.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2020-03-28 18:22:25.771 [restartedMain] DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2020-03-28 18:22:25.772 [restartedMain] DEBUG o.h.v.i.engine.resolver.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2020-03-28 18:22:25.772 [restartedMain] DEBUG o.h.validator.internal.engine.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2020-03-28 18:22:25.772 [restartedMain] DEBUG o.h.validator.internal.engine.ConfigurationImpl - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2020-03-28 18:22:25.772 [restartedMain] DEBUG o.h.validator.internal.engine.ConfigurationImpl - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2020-03-28 18:22:25.772 [restartedMain] DEBUG o.h.v.internal.xml.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2020-03-28 18:22:25.772 [restartedMain] DEBUG o.h.v.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via user class loader
+2020-03-28 18:22:25.772 [restartedMain] DEBUG o.h.v.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2020-03-28 18:22:25.772 [restartedMain] DEBUG o.h.v.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2020-03-28 18:22:25.773 [restartedMain] DEBUG o.h.v.internal.xml.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2020-03-28 18:22:25.776 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2020-03-28 18:22:25.776 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2020-03-28 18:22:25.776 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2020-03-28 18:22:25.776 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2020-03-28 18:22:25.777 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2020-03-28 18:22:26.176 [restartedMain] WARN  o.s.b.s.r.RedisStarterDeprecationWarningAutoConfiguration - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2020-03-28 18:22:26.190 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8099"]
+2020-03-28 18:22:26.196 [restartedMain] INFO  com.sz.gym.GymApplication - Started GymApplication in 1.233 seconds (JVM running for 290.885)
+2020-03-28 18:22:26.197 [restartedMain] INFO  com.sz.gym.listener.StartedListener - 本项目spring容器共管理270个类
+2020-03-28 18:22:26.197 [restartedMain] INFO  com.sz.gym.listener.StartedListener - welcome to 世界五百强健身房管理系统  颤抖凡人
+2020-03-28 18:22:26.197 [restartedMain] INFO  com.sz.gym.listener.StartedListener - GYM World started at         http://192.168.0.119:8099
+2020-03-28 18:22:26.197 [restartedMain] INFO  com.sz.gym.listener.StartedListener - 启动时间为：Sat Mar 28 18:22:26 CST 2020
+2020-03-28 18:22:53.144 [restartedMain] INFO  com.sz.gym.GymApplication - Starting GymApplication on DESKTOP-R9H54P2 with PID 24276 (D:\Git\MrshenS\graduationProject\gym\target\classes started by 10518 in D:\Git\MrshenS\graduationProject\gym)
+2020-03-28 18:22:53.144 [restartedMain] DEBUG com.sz.gym.GymApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-03-28 18:22:53.145 [restartedMain] INFO  com.sz.gym.GymApplication - No active profile set, falling back to default profiles: default
+2020-03-28 18:22:53.833 [restartedMain] WARN  org.apache.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+2020-03-28 18:22:53.907 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8099"]
+2020-03-28 18:22:53.908 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-28 18:22:53.908 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-03-28 18:22:53.989 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-28 18:22:54.484 [restartedMain] DEBUG o.h.v.i.engine.resolver.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2020-03-28 18:22:54.485 [restartedMain] DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2020-03-28 18:22:54.487 [restartedMain] DEBUG o.h.v.i.engine.resolver.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2020-03-28 18:22:54.488 [restartedMain] DEBUG o.h.validator.internal.engine.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2020-03-28 18:22:54.488 [restartedMain] DEBUG o.h.validator.internal.engine.ConfigurationImpl - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2020-03-28 18:22:54.488 [restartedMain] DEBUG o.h.validator.internal.engine.ConfigurationImpl - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2020-03-28 18:22:54.489 [restartedMain] DEBUG o.h.v.internal.xml.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2020-03-28 18:22:54.489 [restartedMain] DEBUG o.h.v.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via user class loader
+2020-03-28 18:22:54.489 [restartedMain] DEBUG o.h.v.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2020-03-28 18:22:54.490 [restartedMain] DEBUG o.h.v.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2020-03-28 18:22:54.490 [restartedMain] DEBUG o.h.v.internal.xml.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2020-03-28 18:22:54.495 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2020-03-28 18:22:54.495 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2020-03-28 18:22:54.495 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2020-03-28 18:22:54.495 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2020-03-28 18:22:54.496 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2020-03-28 18:22:55.131 [restartedMain] WARN  o.s.b.s.r.RedisStarterDeprecationWarningAutoConfiguration - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2020-03-28 18:22:55.158 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8099"]
+2020-03-28 18:22:55.168 [restartedMain] INFO  com.sz.gym.GymApplication - Started GymApplication in 2.087 seconds (JVM running for 319.856)
+2020-03-28 18:22:55.169 [restartedMain] INFO  com.sz.gym.listener.StartedListener - 本项目spring容器共管理270个类
+2020-03-28 18:22:55.170 [restartedMain] INFO  com.sz.gym.listener.StartedListener - welcome to 世界五百强健身房管理系统  颤抖凡人
+2020-03-28 18:22:55.170 [restartedMain] INFO  com.sz.gym.listener.StartedListener - GYM World started at         http://192.168.0.119:8099
+2020-03-28 18:22:55.170 [restartedMain] INFO  com.sz.gym.listener.StartedListener - 启动时间为：Sat Mar 28 18:22:55 CST 2020
+2020-03-28 18:23:46.912 [restartedMain] INFO  com.sz.gym.GymApplication - Starting GymApplication on DESKTOP-R9H54P2 with PID 24276 (D:\Git\MrshenS\graduationProject\gym\target\classes started by 10518 in D:\Git\MrshenS\graduationProject\gym)
+2020-03-28 18:23:46.912 [restartedMain] DEBUG com.sz.gym.GymApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-03-28 18:23:46.913 [restartedMain] INFO  com.sz.gym.GymApplication - No active profile set, falling back to default profiles: default
+2020-03-28 18:23:47.304 [restartedMain] WARN  org.apache.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+2020-03-28 18:23:47.346 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8099"]
+2020-03-28 18:23:47.347 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-28 18:23:47.347 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-03-28 18:23:47.374 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-28 18:23:47.657 [restartedMain] DEBUG o.h.v.i.engine.resolver.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2020-03-28 18:23:47.658 [restartedMain] DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2020-03-28 18:23:47.659 [restartedMain] DEBUG o.h.v.i.engine.resolver.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2020-03-28 18:23:47.659 [restartedMain] DEBUG o.h.validator.internal.engine.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2020-03-28 18:23:47.659 [restartedMain] DEBUG o.h.validator.internal.engine.ConfigurationImpl - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2020-03-28 18:23:47.659 [restartedMain] DEBUG o.h.validator.internal.engine.ConfigurationImpl - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2020-03-28 18:23:47.659 [restartedMain] DEBUG o.h.v.internal.xml.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2020-03-28 18:23:47.659 [restartedMain] DEBUG o.h.v.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via user class loader
+2020-03-28 18:23:47.659 [restartedMain] DEBUG o.h.v.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2020-03-28 18:23:47.659 [restartedMain] DEBUG o.h.v.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2020-03-28 18:23:47.659 [restartedMain] DEBUG o.h.v.internal.xml.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2020-03-28 18:23:47.663 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2020-03-28 18:23:47.663 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2020-03-28 18:23:47.663 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2020-03-28 18:23:47.663 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2020-03-28 18:23:47.663 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2020-03-28 18:23:48.000 [restartedMain] WARN  o.s.b.s.r.RedisStarterDeprecationWarningAutoConfiguration - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2020-03-28 18:23:48.014 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8099"]
+2020-03-28 18:23:48.019 [restartedMain] INFO  com.sz.gym.GymApplication - Started GymApplication in 1.143 seconds (JVM running for 372.707)
+2020-03-28 18:23:48.019 [restartedMain] INFO  com.sz.gym.listener.StartedListener - 本项目spring容器共管理270个类
+2020-03-28 18:23:48.019 [restartedMain] INFO  com.sz.gym.listener.StartedListener - welcome to 世界五百强健身房管理系统  颤抖凡人
+2020-03-28 18:23:48.019 [restartedMain] INFO  com.sz.gym.listener.StartedListener - GYM World started at         http://192.168.0.119:8099
+2020-03-28 18:23:48.019 [restartedMain] INFO  com.sz.gym.listener.StartedListener - 启动时间为：Sat Mar 28 18:23:48 CST 2020
+2020-03-28 18:24:32.355 [restartedMain] INFO  com.sz.gym.GymApplication - Starting GymApplication on DESKTOP-R9H54P2 with PID 24276 (D:\Git\MrshenS\graduationProject\gym\target\classes started by 10518 in D:\Git\MrshenS\graduationProject\gym)
+2020-03-28 18:24:32.355 [restartedMain] DEBUG com.sz.gym.GymApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-03-28 18:24:32.355 [restartedMain] INFO  com.sz.gym.GymApplication - No active profile set, falling back to default profiles: default
+2020-03-28 18:24:32.843 [restartedMain] WARN  org.apache.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+2020-03-28 18:24:32.877 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8099"]
+2020-03-28 18:24:32.877 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-28 18:24:32.877 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-03-28 18:24:32.900 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-28 18:24:33.269 [restartedMain] DEBUG o.h.v.i.engine.resolver.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2020-03-28 18:24:33.269 [restartedMain] DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2020-03-28 18:24:33.270 [restartedMain] DEBUG o.h.v.i.engine.resolver.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2020-03-28 18:24:33.270 [restartedMain] DEBUG o.h.validator.internal.engine.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2020-03-28 18:24:33.270 [restartedMain] DEBUG o.h.validator.internal.engine.ConfigurationImpl - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2020-03-28 18:24:33.270 [restartedMain] DEBUG o.h.validator.internal.engine.ConfigurationImpl - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2020-03-28 18:24:33.270 [restartedMain] DEBUG o.h.v.internal.xml.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2020-03-28 18:24:33.270 [restartedMain] DEBUG o.h.v.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via user class loader
+2020-03-28 18:24:33.271 [restartedMain] DEBUG o.h.v.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2020-03-28 18:24:33.271 [restartedMain] DEBUG o.h.v.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2020-03-28 18:24:33.271 [restartedMain] DEBUG o.h.v.internal.xml.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2020-03-28 18:24:33.277 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2020-03-28 18:24:33.277 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2020-03-28 18:24:33.277 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2020-03-28 18:24:33.277 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2020-03-28 18:24:33.277 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2020-03-28 18:24:33.845 [restartedMain] WARN  o.s.b.s.r.RedisStarterDeprecationWarningAutoConfiguration - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2020-03-28 18:24:33.881 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8099"]
+2020-03-28 18:24:33.891 [restartedMain] INFO  com.sz.gym.GymApplication - Started GymApplication in 1.566 seconds (JVM running for 418.579)
+2020-03-28 18:24:33.892 [restartedMain] INFO  com.sz.gym.listener.StartedListener - 本项目spring容器共管理270个类
+2020-03-28 18:24:33.892 [restartedMain] INFO  com.sz.gym.listener.StartedListener - welcome to 世界五百强健身房管理系统  颤抖凡人
+2020-03-28 18:24:33.892 [restartedMain] INFO  com.sz.gym.listener.StartedListener - GYM World started at         http://192.168.0.119:8099
+2020-03-28 18:24:33.892 [restartedMain] INFO  com.sz.gym.listener.StartedListener - 启动时间为：Sat Mar 28 18:24:33 CST 2020
+2020-03-28 18:33:45.940 [restartedMain] INFO  com.sz.gym.GymApplication - Starting GymApplication on DESKTOP-R9H54P2 with PID 24276 (D:\Git\MrshenS\graduationProject\gym\target\classes started by 10518 in D:\Git\MrshenS\graduationProject\gym)
+2020-03-28 18:33:45.940 [restartedMain] DEBUG com.sz.gym.GymApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-03-28 18:33:45.940 [restartedMain] INFO  com.sz.gym.GymApplication - No active profile set, falling back to default profiles: default
+2020-03-28 18:33:46.530 [restartedMain] WARN  org.apache.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+2020-03-28 18:33:46.558 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8099"]
+2020-03-28 18:33:46.559 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-28 18:33:46.559 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-03-28 18:33:46.578 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-28 18:33:46.943 [restartedMain] DEBUG o.h.v.i.engine.resolver.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2020-03-28 18:33:46.943 [restartedMain] DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2020-03-28 18:33:46.944 [restartedMain] DEBUG o.h.v.i.engine.resolver.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2020-03-28 18:33:46.944 [restartedMain] DEBUG o.h.validator.internal.engine.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2020-03-28 18:33:46.945 [restartedMain] DEBUG o.h.validator.internal.engine.ConfigurationImpl - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2020-03-28 18:33:46.945 [restartedMain] DEBUG o.h.validator.internal.engine.ConfigurationImpl - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2020-03-28 18:33:46.945 [restartedMain] DEBUG o.h.v.internal.xml.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2020-03-28 18:33:46.945 [restartedMain] DEBUG o.h.v.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via user class loader
+2020-03-28 18:33:46.945 [restartedMain] DEBUG o.h.v.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2020-03-28 18:33:46.945 [restartedMain] DEBUG o.h.v.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2020-03-28 18:33:46.945 [restartedMain] DEBUG o.h.v.internal.xml.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2020-03-28 18:33:46.948 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2020-03-28 18:33:46.948 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2020-03-28 18:33:46.948 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2020-03-28 18:33:46.948 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2020-03-28 18:33:46.949 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2020-03-28 18:33:47.447 [restartedMain] WARN  o.s.b.s.r.RedisStarterDeprecationWarningAutoConfiguration - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2020-03-28 18:33:47.461 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8099"]
+2020-03-28 18:33:47.466 [restartedMain] INFO  com.sz.gym.GymApplication - Started GymApplication in 1.554 seconds (JVM running for 972.155)
+2020-03-28 18:33:47.467 [restartedMain] INFO  com.sz.gym.listener.StartedListener - 本项目spring容器共管理270个类
+2020-03-28 18:33:47.467 [restartedMain] INFO  com.sz.gym.listener.StartedListener - welcome to 世界五百强健身房管理系统  颤抖凡人
+2020-03-28 18:33:47.467 [restartedMain] INFO  com.sz.gym.listener.StartedListener - GYM World started at         http://192.168.0.119:8099
+2020-03-28 18:33:47.468 [restartedMain] INFO  com.sz.gym.listener.StartedListener - 启动时间为：Sat Mar 28 18:33:47 CST 2020
+2020-03-28 18:33:56.078 [restartedMain] INFO  com.sz.gym.GymApplication - Starting GymApplication on DESKTOP-R9H54P2 with PID 24276 (D:\Git\MrshenS\graduationProject\gym\target\classes started by 10518 in D:\Git\MrshenS\graduationProject\gym)
+2020-03-28 18:33:56.079 [restartedMain] DEBUG com.sz.gym.GymApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-03-28 18:33:56.079 [restartedMain] INFO  com.sz.gym.GymApplication - No active profile set, falling back to default profiles: default
+2020-03-28 18:33:56.567 [restartedMain] WARN  org.apache.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+2020-03-28 18:33:56.632 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8099"]
+2020-03-28 18:33:56.632 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-28 18:33:56.632 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-03-28 18:33:56.663 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-28 18:33:57.189 [restartedMain] DEBUG o.h.v.i.engine.resolver.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2020-03-28 18:33:57.191 [restartedMain] DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2020-03-28 18:33:57.193 [restartedMain] DEBUG o.h.v.i.engine.resolver.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2020-03-28 18:33:57.193 [restartedMain] DEBUG o.h.validator.internal.engine.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2020-03-28 18:33:57.193 [restartedMain] DEBUG o.h.validator.internal.engine.ConfigurationImpl - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2020-03-28 18:33:57.193 [restartedMain] DEBUG o.h.validator.internal.engine.ConfigurationImpl - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2020-03-28 18:33:57.194 [restartedMain] DEBUG o.h.v.internal.xml.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2020-03-28 18:33:57.194 [restartedMain] DEBUG o.h.v.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via user class loader
+2020-03-28 18:33:57.194 [restartedMain] DEBUG o.h.v.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2020-03-28 18:33:57.195 [restartedMain] DEBUG o.h.v.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2020-03-28 18:33:57.195 [restartedMain] DEBUG o.h.v.internal.xml.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2020-03-28 18:33:57.203 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2020-03-28 18:33:57.204 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2020-03-28 18:33:57.204 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2020-03-28 18:33:57.204 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2020-03-28 18:33:57.204 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2020-03-28 18:33:57.832 [restartedMain] WARN  o.s.b.s.r.RedisStarterDeprecationWarningAutoConfiguration - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2020-03-28 18:33:57.857 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8099"]
+2020-03-28 18:33:57.870 [restartedMain] INFO  com.sz.gym.GymApplication - Started GymApplication in 1.846 seconds (JVM running for 982.558)
+2020-03-28 18:33:57.871 [restartedMain] INFO  com.sz.gym.listener.StartedListener - 本项目spring容器共管理270个类
+2020-03-28 18:33:57.871 [restartedMain] INFO  com.sz.gym.listener.StartedListener - welcome to 世界五百强健身房管理系统  颤抖凡人
+2020-03-28 18:33:57.871 [restartedMain] INFO  com.sz.gym.listener.StartedListener - GYM World started at         http://192.168.0.119:8099
+2020-03-28 18:33:57.871 [restartedMain] INFO  com.sz.gym.listener.StartedListener - 启动时间为：Sat Mar 28 18:33:57 CST 2020
+2020-03-28 18:45:02.622 [restartedMain] INFO  com.sz.gym.GymApplication - Starting GymApplication on DESKTOP-R9H54P2 with PID 24276 (D:\Git\MrshenS\graduationProject\gym\target\classes started by 10518 in D:\Git\MrshenS\graduationProject\gym)
+2020-03-28 18:45:02.623 [restartedMain] DEBUG com.sz.gym.GymApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-03-28 18:45:02.623 [restartedMain] INFO  com.sz.gym.GymApplication - No active profile set, falling back to default profiles: default
+2020-03-28 18:45:03.153 [restartedMain] WARN  org.apache.tomcat.util.modeler.Registry - The MBean registry cannot be disabled because it has already been initialised
+2020-03-28 18:45:03.185 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8099"]
+2020-03-28 18:45:03.185 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-28 18:45:03.185 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-03-28 18:45:03.211 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-28 18:45:03.530 [restartedMain] DEBUG o.h.v.i.engine.resolver.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2020-03-28 18:45:03.531 [restartedMain] DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2020-03-28 18:45:03.532 [restartedMain] DEBUG o.h.v.i.engine.resolver.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2020-03-28 18:45:03.532 [restartedMain] DEBUG o.h.validator.internal.engine.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2020-03-28 18:45:03.532 [restartedMain] DEBUG o.h.validator.internal.engine.ConfigurationImpl - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2020-03-28 18:45:03.532 [restartedMain] DEBUG o.h.validator.internal.engine.ConfigurationImpl - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2020-03-28 18:45:03.532 [restartedMain] DEBUG o.h.v.internal.xml.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2020-03-28 18:45:03.533 [restartedMain] DEBUG o.h.v.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via user class loader
+2020-03-28 18:45:03.533 [restartedMain] DEBUG o.h.v.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2020-03-28 18:45:03.533 [restartedMain] DEBUG o.h.v.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2020-03-28 18:45:03.533 [restartedMain] DEBUG o.h.v.internal.xml.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2020-03-28 18:45:03.537 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2020-03-28 18:45:03.537 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2020-03-28 18:45:03.537 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2020-03-28 18:45:03.537 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2020-03-28 18:45:03.537 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2020-03-28 18:45:03.978 [restartedMain] WARN  o.s.b.s.r.RedisStarterDeprecationWarningAutoConfiguration - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2020-03-28 18:45:03.999 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8099"]
+2020-03-28 18:45:04.006 [restartedMain] INFO  com.sz.gym.GymApplication - Started GymApplication in 1.432 seconds (JVM running for 1650.435)
+2020-03-28 18:45:04.007 [restartedMain] INFO  com.sz.gym.listener.StartedListener - 本项目spring容器共管理271个类
+2020-03-28 18:45:04.007 [restartedMain] INFO  com.sz.gym.listener.StartedListener - welcome to 世界五百强健身房管理系统  颤抖凡人
+2020-03-28 18:45:04.007 [restartedMain] INFO  com.sz.gym.listener.StartedListener - GYM World started at         http://192.168.0.119:8099
+2020-03-28 18:45:04.008 [restartedMain] INFO  com.sz.gym.listener.StartedListener - 启动时间为：Sat Mar 28 18:45:04 CST 2020
+2020-03-28 18:46:02.364 [background-preinit] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2020-03-28 18:46:02.367 [background-preinit] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2020-03-28 18:46:02.367 [background-preinit] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2020-03-28 18:46:02.367 [background-preinit] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2020-03-28 18:46:02.368 [background-preinit] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2020-03-28 18:46:02.478 [restartedMain] INFO  com.sz.gym.GymApplication - Starting GymApplication on DESKTOP-R9H54P2 with PID 2712 (D:\Git\MrshenS\graduationProject\gym\target\classes started by 10518 in D:\Git\MrshenS\graduationProject\gym)
+2020-03-28 18:46:02.478 [restartedMain] DEBUG com.sz.gym.GymApplication - Running with Spring Boot v2.2.2.RELEASE, Spring v5.2.2.RELEASE
+2020-03-28 18:46:02.479 [restartedMain] INFO  com.sz.gym.GymApplication - No active profile set, falling back to default profiles: default
+2020-03-28 18:46:03.474 [restartedMain] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-03-28 18:46:04.182 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8099"]
+2020-03-28 18:46:04.183 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-03-28 18:46:04.183 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.29]
+2020-03-28 18:46:04.269 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-03-28 18:46:05.323 [restartedMain] DEBUG o.h.v.i.engine.resolver.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2020-03-28 18:46:05.324 [restartedMain] DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+2020-03-28 18:46:05.333 [restartedMain] DEBUG o.h.v.i.engine.resolver.TraversableResolvers - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2020-03-28 18:46:05.335 [restartedMain] DEBUG o.h.validator.internal.engine.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2020-03-28 18:46:05.336 [restartedMain] DEBUG o.h.validator.internal.engine.ConfigurationImpl - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2020-03-28 18:46:05.337 [restartedMain] DEBUG o.h.validator.internal.engine.ConfigurationImpl - Setting custom ParameterNameProvider of type org.springframework.validation.beanvalidation.LocalValidatorFactoryBean$1
+2020-03-28 18:46:05.339 [restartedMain] DEBUG o.h.v.internal.xml.config.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+2020-03-28 18:46:05.340 [restartedMain] DEBUG o.h.v.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via user class loader
+2020-03-28 18:46:05.341 [restartedMain] DEBUG o.h.v.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+2020-03-28 18:46:05.341 [restartedMain] DEBUG o.h.v.internal.xml.config.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2020-03-28 18:46:05.342 [restartedMain] DEBUG o.h.v.internal.xml.config.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+2020-03-28 18:46:05.349 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator as ValidatorFactory-scoped message interpolator.
+2020-03-28 18:46:05.350 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.resolver.TraverseAllTraversableResolver as ValidatorFactory-scoped traversable resolver.
+2020-03-28 18:46:05.350 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+2020-03-28 18:46:05.351 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+2020-03-28 18:46:05.351 [restartedMain] DEBUG o.h.validator.internal.engine.ValidatorFactoryImpl - HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+2020-03-28 18:46:06.319 [restartedMain] WARN  o.s.b.s.r.RedisStarterDeprecationWarningAutoConfiguration - spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2020-03-28 18:46:06.360 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8099"]
+2020-03-28 18:46:06.423 [restartedMain] INFO  com.sz.gym.GymApplication - Started GymApplication in 4.407 seconds (JVM running for 5.443)
+2020-03-28 18:46:06.425 [restartedMain] INFO  com.sz.gym.listener.StartedListener - 本项目spring容器共管理271个类
+2020-03-28 18:46:06.425 [restartedMain] INFO  com.sz.gym.listener.StartedListener - welcome to 世界五百强健身房管理系统  颤抖凡人
+2020-03-28 18:46:06.425 [restartedMain] INFO  com.sz.gym.listener.StartedListener - GYM World started at         http://192.168.0.119:8099
+2020-03-28 18:46:06.426 [restartedMain] INFO  com.sz.gym.listener.StartedListener - 启动时间为：Sat Mar 28 18:46:06 CST 2020
+2020-03-28 18:47:07.612 [http-nio-8099-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-03-28 18:47:07.631 [http-nio-8099-exec-2] DEBUG com.sz.gym.web.Filter.OriginFilter - *******************************************过滤器生效***************************************
+2020-03-28 18:47:07.784 [http-nio-8099-exec-2] INFO  com.sz.gym.aspect.ControllerAspect - 访问的URL : http://localhost:8099/GetCustomer
+2020-03-28 18:47:07.784 [http-nio-8099-exec-2] INFO  com.sz.gym.aspect.ControllerAspect - 请求方法 : POST
+2020-03-28 18:47:07.785 [http-nio-8099-exec-2] INFO  com.sz.gym.aspect.ControllerAspect - 请求IP地址 : 0:0:0:0:0:0:0:1
+2020-03-28 18:47:07.785 [http-nio-8099-exec-2] INFO  com.sz.gym.aspect.ControllerAspect - 请求参数 : [com.sz.gym.model.entity.Employee@2f19fe48]
+2020-03-28 18:47:07.789 [http-nio-8099-exec-2] INFO  com.sz.gym.aspect.ControllerAspect - ################CLASS_METHOD : com.sz.gym.web.controller.TestController.getCustomer
+2020-03-28 18:47:07.790 [http-nio-8099-exec-2] INFO  com.sz.gym.aspect.ControllerAspect - ################TARGET: com.sz.gym.web.controller.TestController@7b6987b4
+2020-03-28 18:47:07.790 [http-nio-8099-exec-2] WARN  com.sz.gym.aspect.ControllerAspect - ======================请妥善使用SpringAOP功能================
+2020-03-28 18:47:07.790 [http-nio-8099-exec-2] INFO  com.sz.gym.aspect.ControllerAspect - ################THIS: com.sz.gym.web.controller.TestController@7b6987b4
+2020-03-28 18:47:07.797 [http-nio-8099-exec-2] INFO  com.sz.gym.web.controller.TestController - 调用成功
+2020-03-28 18:47:07.797 [http-nio-8099-exec-2] INFO  com.sz.gym.web.controller.TestController - 对象：com.sz.gym.model.entity.Employee@2f19fe48

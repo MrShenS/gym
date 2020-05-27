@@ -9,7 +9,6 @@ import com.sz.gym.service.DashboardService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
 import java.text.ParseException;
 import java.util.List;
 
@@ -32,6 +31,7 @@ public class DashboardController {
     @GetMapping("/headerNumber")
     public BaseVO<HeaderNumberDTO> headerNumber(){
         log.info("接收请求获取首页的员工 器械 和顾客 数量信息");
+        
         return dashboardService.getHeaderNumber();
     }
     @GetMapping("/facilitiesRatio")

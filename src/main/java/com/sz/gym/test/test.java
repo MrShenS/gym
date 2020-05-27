@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.HashSet;
 import java.util.List;
 
 /**
@@ -19,7 +20,10 @@ import java.util.List;
  */
 @Component
 public class test {
-
+    public static void main(String[] args) {
+        HashSet<Object> objects = new HashSet<>();
+        objects.add("");
+    }
 
 
 }
